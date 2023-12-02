@@ -3,6 +3,8 @@
 import torch
 import pandas as pd
 import argparse
+import numpy as np
+from model import get_hog_features
 
 
 def prepare_data(data):
@@ -10,8 +12,10 @@ def prepare_data(data):
     test_x = data[data['Usage'] == 'PublicTest']
     train_y = train_x['emotion']
     test_y = test_x['emotion']
-    train_x = train_x['pixels'].str.split(' ', expand=True).astype('float32')
-    test_x = test_x['pixels'].str.split(' ', expand=True).astype('float32')
+    # train_x = train_x['pixels'].str.split(' ', expand=True).astype('float32')
+    # test_x = test_x['pixels'].str.split(' ', expand=True).astype('float32')
+    train_x = get_hog_features(np.array(train_x['pixels'].str.split(' ', expand=True).astype('float32')))
+    test_x = get_hog_features(np.array(test_x['pixels'].str.split(' ', expand=True).astype('float32')))
     return train_x, train_y, test_x, test_y
 
 def main(device):
@@ -20,7 +24,7 @@ def main(device):
     print("start loading data")
     train_x, train_y, test_x, test_y = prepare_data(data)
     print("loading data done")
-    print(train_x.shape, train_y.shape, test_x.shape, test_y.shape)
+    # print(train_x.shape, train_y.shape, test_x.shape, test_y.shape)
     
     if device == 'cpu':
         print("Using CPU")
@@ -30,9 +34,9 @@ def main(device):
         from thundersvm import SVC
         device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
         train_x, train_y, test_x, test_y = (
-            torch.tensor(train_x.values).to(device),
+            torch.tensor(train_x).to(device),
             torch.tensor(train_y.values).to(device),
-            torch.tensor(test_x.values).to(device),
+            torch.tensor(test_x).to(device),
             torch.tensor(test_y.values).to(device),
         )
         
