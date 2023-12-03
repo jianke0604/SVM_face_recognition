@@ -19,6 +19,7 @@ def main(args):
     hog = args.hog
     path = args.path
     data = pd.read_csv(path)
+    print(args)
     print("start loading data")
     train_x, train_y, test_x, test_y = prepare_data(data)
     if hog:
