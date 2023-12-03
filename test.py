@@ -1,5 +1,3 @@
-# from thundersvm import SVC
-# from sklearn.svm import SVC
 import torch
 import pandas as pd
 import argparse
@@ -40,19 +38,12 @@ def main(args):
     else:
         print("Using GPU")
         from thundersvm import SVC
-        device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
-        train_x, train_y, test_x, test_y = (
-            torch.tensor(train_x).to(device),
-            torch.tensor(train_y.values).to(device),
-            torch.tensor(test_x).to(device),
-            torch.tensor(test_y.values).to(device),
-        )
         
         # Create SVM model on GPU
         face = SVC(
             C=args.C, kernel=args.kernel, gamma=args.gamma, cache_size=800,
             decision_function_shape='ovr', probability=True,
-            random_state=42, gpu_id=5, verbose=1
+            random_state=42, gpu_id=args.gpu_id, verbose=1
         )
 
     # Train and test on GPU
@@ -67,6 +58,7 @@ if '__main__' == __name__:
     parser.add_argument('--kernel', default='rbf', help='Kernel type (default: rbf)')
     parser.add_argument('--gamma', default=0.01, help='Kernel coefficient (default: 0.01)')
     parser.add_argument('--C', default=1.0, help='Penalty parameter C of the error term (default: 1.0)')
+    parser.add_argument('--gpu_id', type=int ,default=1, help='Specify the GPU id (default: 1)')
 
     args = parser.parse_args()
     main(args)
