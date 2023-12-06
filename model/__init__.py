@@ -1,1 +1,0 @@
-from .hog import get_hog_features
