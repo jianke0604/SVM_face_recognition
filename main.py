@@ -2,21 +2,22 @@ import torch
 import pandas as pd
 import argparse
 
-if torch.cuda.is_available():
-    from thundersvm import SVC
-    device = "cuda"
-else:
-    from sklearn.svm import SVC
-    device = "cpu"
-
 from model.hog import get_hog_features
 from model.resnet import ResNet
 from dataset import prepare_data
+from sklearn.decomposition import PCA
 
 
 def main(args):
+    if torch.cuda.is_available() and args.device == "gpu":
+        from thundersvm import SVC
+        device = "cuda"
+    else:
+        from sklearn.svm import SVC
+        device = "cpu"
     method = args.method
     path = args.path
+    pca = args.pca
 
     print("start loading data")
     data = pd.read_csv(path)
@@ -50,6 +51,11 @@ def main(args):
         # print(len(test_x), len(test_x[0]))    # 3589 900
         # print(train_x.shape, train_x.device, type(train_x))
         # print(test_x.shape, test_x.device, type(test_x))
+    if pca:
+        pca = PCA(n_components=args.nComponents)
+        train_x = pca.fit_transform(train_x)
+        test_x = pca.fit_transform(test_x)
+
     print("loading data done")
     
     if device == 'cpu':
@@ -79,7 +85,10 @@ if '__main__' == __name__:
     parser.add_argument('--kernel', default='rbf', help='Kernel type (default: rbf)')
     parser.add_argument('--gamma', default=0.01, help='Kernel coefficient (default: 0.01)')
     parser.add_argument('--C', default=1.0, help='Penalty parameter C of the error term (default: 1.0)')
-    parser.add_argument('--gpu_id', type=int, default=1, help='Specify the GPU id (default: 0)')
+    parser.add_argument('--device', default='gpu', help='Device to use (default: gpu)')
+    parser.add_argument('--gpu_id', type=int, default=0, help='Specify the GPU id (default: 0)')
+    parser.add_argument('--pca', default=False)
+    parser.add_argument('--nComponents', default=100, help='Specify the feature number of PCA')
 
     args = parser.parse_args()
     main(args)
