@@ -2,14 +2,1118 @@ Namespace(C=5.0, device='gpu', gamma=0.05, gpu_id=4, kernel='rbf', method='hog',
 start loading data
 (11664,)
 (11664,)
-161475 11664
+64596 11664
 3589 11664
 loading data done
 Using GPU
-2023-12-08 15:15:24,943 INFO [default] #instances = 161475, #features = 11664
-2023-12-08 15:15:37,684 INFO [default] #classes = 7
-2023-12-08 15:15:53,514 INFO [default] working set size = 1024
-2023-12-08 15:15:53,516 INFO [default] training start
-2023-12-08 15:15:57,663 INFO [default] global iter = 0, total local iter = 577, diff = 2
-2023-12-08 15:17:25,929 INFO [default] global iter = 100, total local iter = 52036, diff = 0.86937
-2023-12-08 15:18:55,579 INFO [default] global iter = 200, total local iter = 100276, diff = 0.0515774
+2023-12-08 20:30:40,501 INFO [default] #instances = 64596, #features = 11664
+2023-12-08 20:30:44,077 INFO [default] #classes = 7
+2023-12-08 20:30:50,048 INFO [default] working set size = 1024
+2023-12-08 20:30:50,049 INFO [default] training start
+2023-12-08 20:30:50,934 INFO [default] global iter = 0, total local iter = 588, diff = 2
+2023-12-08 20:31:26,810 INFO [default] global iter = 100, total local iter = 51518, diff = 0.0105269
+2023-12-08 20:31:37,991 INFO [default] global iter = 131, total local iter = 61009, diff = 0.000999094
+2023-12-08 20:31:37,991 INFO [default] training finished
+2023-12-08 20:31:37,991 INFO [default] obj = -8273.93
+2023-12-08 20:31:37,992 INFO [default] rho = 0.229578
+2023-12-08 20:31:37,992 INFO [default] #sv = 17944
+2023-12-08 20:31:44,229 INFO [default] working set size = 1024
+2023-12-08 20:31:44,231 INFO [default] training start
+2023-12-08 20:31:44,990 INFO [default] global iter = 0, total local iter = 587, diff = 2
+2023-12-08 20:32:24,779 INFO [default] global iter = 100, total local iter = 49551, diff = 0.0235172
+2023-12-08 20:32:41,887 INFO [default] global iter = 143, total local iter = 64741, diff = 0.000999865
+2023-12-08 20:32:41,887 INFO [default] training finished
+2023-12-08 20:32:41,887 INFO [default] obj = -9097.43
+2023-12-08 20:32:41,888 INFO [default] rho = 0.378316
+2023-12-08 20:32:41,888 INFO [default] #sv = 19618
+2023-12-08 20:32:47,905 INFO [default] working set size = 1024
+2023-12-08 20:32:47,906 INFO [default] training start
+2023-12-08 20:32:48,682 INFO [default] global iter = 0, total local iter = 630, diff = 2
+2023-12-08 20:33:29,555 INFO [default] global iter = 100, total local iter = 52239, diff = 0.0248171
+2023-12-08 20:33:48,251 INFO [default] global iter = 146, total local iter = 69324, diff = 0.00099972
+2023-12-08 20:33:48,251 INFO [default] training finished
+2023-12-08 20:33:48,251 INFO [default] obj = -8776.85
+2023-12-08 20:33:48,252 INFO [default] rho = 0.211638
+2023-12-08 20:33:48,252 INFO [default] #sv = 19773
+2023-12-08 20:33:57,680 INFO [default] working set size = 1024
+2023-12-08 20:33:57,682 INFO [default] training start
+2023-12-08 20:33:58,647 INFO [default] global iter = 0, total local iter = 632, diff = 2
+2023-12-08 20:34:49,102 INFO [default] global iter = 100, total local iter = 51326, diff = 0.0558474
+2023-12-08 20:35:23,893 INFO [default] global iter = 169, total local iter = 78707, diff = 0.000999177
+2023-12-08 20:35:23,893 INFO [default] training finished
+2023-12-08 20:35:23,893 INFO [default] obj = -8952.39
+2023-12-08 20:35:23,894 INFO [default] rho = 0.117228
+2023-12-08 20:35:23,895 INFO [default] #sv = 23196
+2023-12-08 20:35:29,116 INFO [default] working set size = 1024
+2023-12-08 20:35:29,118 INFO [default] training start
+2023-12-08 20:35:29,745 INFO [default] global iter = 0, total local iter = 682, diff = 2
+2023-12-08 20:36:02,820 INFO [default] global iter = 100, total local iter = 49597, diff = 0.0033534
+2023-12-08 20:36:07,405 INFO [default] global iter = 114, total local iter = 52533, diff = 0.000999292
+2023-12-08 20:36:07,405 INFO [default] training finished
+2023-12-08 20:36:07,405 INFO [default] obj = -5845.09
+2023-12-08 20:36:07,406 INFO [default] rho = -0.129255
+2023-12-08 20:36:07,406 INFO [default] #sv = 15117
+2023-12-08 20:36:10,475 INFO [default] working set size = 1024
+2023-12-08 20:36:10,476 INFO [default] training start
+2023-12-08 20:36:10,884 INFO [default] global iter = 0, total local iter = 671, diff = 2
+2023-12-08 20:36:25,241 INFO [default] global iter = 68, total local iter = 30885, diff = 0.000998597
+2023-12-08 20:36:25,241 INFO [default] training finished
+2023-12-08 20:36:25,241 INFO [default] obj = -1554.63
+2023-12-08 20:36:25,242 INFO [default] rho = -0.777478
+2023-12-08 20:36:25,242 INFO [default] #sv = 9464
+2023-12-08 20:36:31,427 INFO [default] working set size = 1024
+2023-12-08 20:36:31,428 INFO [default] training start
+2023-12-08 20:36:32,202 INFO [default] global iter = 0, total local iter = 608, diff = 2
+2023-12-08 20:37:12,971 INFO [default] global iter = 100, total local iter = 50727, diff = 0.0246099
+2023-12-08 20:37:32,858 INFO [default] global iter = 149, total local iter = 68669, diff = 0.000998766
+2023-12-08 20:37:32,858 INFO [default] training finished
+2023-12-08 20:37:32,858 INFO [default] obj = -9251.06
+2023-12-08 20:37:32,859 INFO [default] rho = 0.120202
+2023-12-08 20:37:32,859 INFO [default] #sv = 19883
+2023-12-08 20:37:38,990 INFO [default] working set size = 1024
+2023-12-08 20:37:38,991 INFO [default] training start
+2023-12-08 20:37:39,778 INFO [default] global iter = 0, total local iter = 629, diff = 2
+2023-12-08 20:38:21,234 INFO [default] global iter = 100, total local iter = 52895, diff = 0.0268281
+2023-12-08 20:38:41,946 INFO [default] global iter = 150, total local iter = 71889, diff = 0.000999022
+2023-12-08 20:38:41,946 INFO [default] training finished
+2023-12-08 20:38:41,946 INFO [default] obj = -8771.49
+2023-12-08 20:38:41,949 INFO [default] rho = -0.0226738
+2023-12-08 20:38:41,949 INFO [default] #sv = 20078
+2023-12-08 20:38:50,664 INFO [default] working set size = 1024
+2023-12-08 20:38:50,666 INFO [default] training start
+2023-12-08 20:38:51,640 INFO [default] global iter = 0, total local iter = 642, diff = 2
+2023-12-08 20:39:42,632 INFO [default] global iter = 100, total local iter = 51328, diff = 0.0573535
+2023-12-08 20:40:19,301 INFO [default] global iter = 172, total local iter = 79829, diff = 0.000999957
+2023-12-08 20:40:19,301 INFO [default] training finished
+2023-12-08 20:40:19,301 INFO [default] obj = -8888.47
+2023-12-08 20:40:19,302 INFO [default] rho = -0.105142
+2023-12-08 20:40:19,302 INFO [default] #sv = 23614
+2023-12-08 20:40:24,987 INFO [default] working set size = 1024
+2023-12-08 20:40:24,988 INFO [default] training start
+2023-12-08 20:40:25,649 INFO [default] global iter = 0, total local iter = 648, diff = 2
+2023-12-08 20:40:59,343 INFO [default] global iter = 100, total local iter = 51712, diff = 0.0067148
+2023-12-08 20:41:07,333 INFO [default] global iter = 124, total local iter = 58164, diff = 0.000999957
+2023-12-08 20:41:07,334 INFO [default] training finished
+2023-12-08 20:41:07,334 INFO [default] obj = -6799.76
+2023-12-08 20:41:07,334 INFO [default] rho = -0.310972
+2023-12-08 20:41:07,335 INFO [default] #sv = 15912
+2023-12-08 20:41:10,608 INFO [default] working set size = 1024
+2023-12-08 20:41:10,609 INFO [default] training start
+2023-12-08 20:41:11,027 INFO [default] global iter = 0, total local iter = 672, diff = 2
+2023-12-08 20:41:25,609 INFO [default] global iter = 67, total local iter = 30117, diff = 0.000999287
+2023-12-08 20:41:25,609 INFO [default] training finished
+2023-12-08 20:41:25,609 INFO [default] obj = -1545.73
+2023-12-08 20:41:25,610 INFO [default] rho = -0.838805
+2023-12-08 20:41:25,610 INFO [default] #sv = 9542
+2023-12-08 20:41:32,520 INFO [default] working set size = 1024
+2023-12-08 20:41:32,521 INFO [default] training start
+2023-12-08 20:41:33,370 INFO [default] global iter = 0, total local iter = 701, diff = 2
+2023-12-08 20:42:17,766 INFO [default] global iter = 100, total local iter = 51811, diff = 0.0363611
+2023-12-08 20:42:43,487 INFO [default] global iter = 158, total local iter = 74811, diff = 0.000999988
+2023-12-08 20:42:43,487 INFO [default] training finished
+2023-12-08 20:42:43,487 INFO [default] obj = -10062.6
+2023-12-08 20:42:43,487 INFO [default] rho = -0.156546
+2023-12-08 20:42:43,488 INFO [default] #sv = 21840
+2023-12-08 20:42:52,473 INFO [default] working set size = 1024
+2023-12-08 20:42:52,475 INFO [default] training start
+2023-12-08 20:42:53,508 INFO [default] global iter = 0, total local iter = 697, diff = 2
+2023-12-08 20:43:47,422 INFO [default] global iter = 100, total local iter = 51364, diff = 0.0795745
+2023-12-08 20:44:30,648 INFO [default] global iter = 180, total local iter = 83591, diff = 0.000999138
+2023-12-08 20:44:30,648 INFO [default] training finished
+2023-12-08 20:44:30,648 INFO [default] obj = -9951.02
+2023-12-08 20:44:30,649 INFO [default] rho = -0.223194
+2023-12-08 20:44:30,649 INFO [default] #sv = 25167
+2023-12-08 20:44:36,455 INFO [default] working set size = 1024
+2023-12-08 20:44:36,456 INFO [default] training start
+2023-12-08 20:44:37,153 INFO [default] global iter = 0, total local iter = 734, diff = 2
+2023-12-08 20:45:13,777 INFO [default] global iter = 100, total local iter = 48756, diff = 0.00660685
+2023-12-08 20:45:22,117 INFO [default] global iter = 123, total local iter = 54982, diff = 0.000998993
+2023-12-08 20:45:22,117 INFO [default] training finished
+2023-12-08 20:45:22,117 INFO [default] obj = -6164.63
+2023-12-08 20:45:22,118 INFO [default] rho = -0.423703
+2023-12-08 20:45:22,118 INFO [default] #sv = 16949
+2023-12-08 20:45:26,567 INFO [default] working set size = 1024
+2023-12-08 20:45:26,568 INFO [default] training start
+2023-12-08 20:45:27,036 INFO [default] global iter = 0, total local iter = 716, diff = 2
+2023-12-08 20:45:45,300 INFO [default] global iter = 74, total local iter = 32627, diff = 0.000999566
+2023-12-08 20:45:45,300 INFO [default] training finished
+2023-12-08 20:45:45,300 INFO [default] obj = -1545.24
+2023-12-08 20:45:45,301 INFO [default] rho = -0.871225
+2023-12-08 20:45:45,301 INFO [default] #sv = 11074
+2023-12-08 20:45:55,068 INFO [default] working set size = 1024
+2023-12-08 20:45:55,070 INFO [default] training start
+2023-12-08 20:45:56,117 INFO [default] global iter = 0, total local iter = 615, diff = 2
+2023-12-08 20:46:50,745 INFO [default] global iter = 100, total local iter = 51618, diff = 0.0832761
+2023-12-08 20:47:37,064 INFO [default] global iter = 185, total local iter = 86726, diff = 0.000999745
+2023-12-08 20:47:37,064 INFO [default] training finished
+2023-12-08 20:47:37,064 INFO [default] obj = -9974.05
+2023-12-08 20:47:37,064 INFO [default] rho = -0.0905893
+2023-12-08 20:47:37,064 INFO [default] #sv = 25299
+2023-12-08 20:47:43,417 INFO [default] working set size = 1024
+2023-12-08 20:47:43,418 INFO [default] training start
+2023-12-08 20:47:44,134 INFO [default] global iter = 0, total local iter = 645, diff = 2
+2023-12-08 20:48:21,524 INFO [default] global iter = 100, total local iter = 50731, diff = 0.0101498
+2023-12-08 20:48:31,914 INFO [default] global iter = 128, total local iter = 59066, diff = 0.000999692
+2023-12-08 20:48:31,914 INFO [default] training finished
+2023-12-08 20:48:31,914 INFO [default] obj = -6389.45
+2023-12-08 20:48:31,917 INFO [default] rho = -0.312647
+2023-12-08 20:48:31,917 INFO [default] #sv = 17149
+2023-12-08 20:48:36,516 INFO [default] working set size = 1024
+2023-12-08 20:48:36,517 INFO [default] training start
+2023-12-08 20:48:37,004 INFO [default] global iter = 0, total local iter = 659, diff = 2
+2023-12-08 20:48:55,168 INFO [default] global iter = 72, total local iter = 32631, diff = 0.000998304
+2023-12-08 20:48:55,168 INFO [default] training finished
+2023-12-08 20:48:55,168 INFO [default] obj = -1512
+2023-12-08 20:48:55,168 INFO [default] rho = -0.818457
+2023-12-08 20:48:55,168 INFO [default] #sv = 10463
+2023-12-08 20:49:03,467 INFO [default] working set size = 1024
+2023-12-08 20:49:03,468 INFO [default] training start
+2023-12-08 20:49:04,367 INFO [default] global iter = 0, total local iter = 667, diff = 2
+2023-12-08 20:49:51,238 INFO [default] global iter = 100, total local iter = 49349, diff = 0.0223775
+2023-12-08 20:50:12,743 INFO [default] global iter = 146, total local iter = 66118, diff = 0.00099897
+2023-12-08 20:50:12,743 INFO [default] training finished
+2023-12-08 20:50:12,743 INFO [default] obj = -6619.13
+2023-12-08 20:50:12,746 INFO [default] rho = -0.24185
+2023-12-08 20:50:12,746 INFO [default] #sv = 20473
+2023-12-08 20:50:18,163 INFO [default] working set size = 1024
+2023-12-08 20:50:18,164 INFO [default] training start
+2023-12-08 20:50:18,830 INFO [default] global iter = 0, total local iter = 686, diff = 2
+2023-12-08 20:50:47,850 INFO [default] global iter = 83, total local iter = 37128, diff = 0.000997465
+2023-12-08 20:50:47,850 INFO [default] training finished
+2023-12-08 20:50:47,850 INFO [default] obj = -1522.59
+2023-12-08 20:50:47,851 INFO [default] rho = -0.812564
+2023-12-08 20:50:47,851 INFO [default] #sv = 12686
+2023-12-08 20:50:50,558 INFO [default] working set size = 1024
+2023-12-08 20:50:50,559 INFO [default] training start
+2023-12-08 20:50:50,889 INFO [default] global iter = 0, total local iter = 644, diff = 2
+2023-12-08 20:50:59,330 INFO [default] global iter = 48, total local iter = 20927, diff = 0.000999583
+2023-12-08 20:50:59,330 INFO [default] training finished
+2023-12-08 20:50:59,330 INFO [default] obj = -1356.23
+2023-12-08 20:50:59,330 INFO [default] rho = -0.695164
+2023-12-08 20:50:59,330 INFO [default] #sv = 6809
+2023-12-08 20:51:04,596 INFO [default] #total unique sv = 63849
+2023-12-08 20:51:04,599 INFO [default] performing probability train
+2023-12-08 20:51:13,787 INFO [default] #classes = 7
+2023-12-08 20:51:18,336 INFO [default] working set size = 1024
+2023-12-08 20:51:18,338 INFO [default] training start
+2023-12-08 20:51:18,901 INFO [default] global iter = 0, total local iter = 572, diff = 2
+2023-12-08 20:51:48,854 INFO [default] global iter = 100, total local iter = 47752, diff = 0.00165902
+2023-12-08 20:51:50,040 INFO [default] global iter = 104, total local iter = 48289, diff = 0.000998261
+2023-12-08 20:51:50,040 INFO [default] training finished
+2023-12-08 20:51:50,040 INFO [default] obj = -6671.36
+2023-12-08 20:51:50,041 INFO [default] rho = 0.211776
+2023-12-08 20:51:50,041 INFO [default] #sv = 14389
+2023-12-08 20:51:54,401 INFO [default] working set size = 1024
+2023-12-08 20:51:54,402 INFO [default] training start
+2023-12-08 20:51:55,016 INFO [default] global iter = 0, total local iter = 578, diff = 2
+2023-12-08 20:52:27,525 INFO [default] global iter = 100, total local iter = 48959, diff = 0.00499008
+2023-12-08 20:52:32,721 INFO [default] global iter = 116, total local iter = 52656, diff = 0.000999839
+2023-12-08 20:52:32,721 INFO [default] training finished
+2023-12-08 20:52:32,721 INFO [default] obj = -7326.66
+2023-12-08 20:52:32,722 INFO [default] rho = 0.377964
+2023-12-08 20:52:32,722 INFO [default] #sv = 15717
+2023-12-08 20:52:38,018 INFO [default] working set size = 1024
+2023-12-08 20:52:38,019 INFO [default] training start
+2023-12-08 20:52:38,649 INFO [default] global iter = 0, total local iter = 629, diff = 2
+2023-12-08 20:53:11,833 INFO [default] global iter = 100, total local iter = 51933, diff = 0.00524757
+2023-12-08 20:53:17,716 INFO [default] global iter = 118, total local iter = 56361, diff = 0.000999192
+2023-12-08 20:53:17,716 INFO [default] training finished
+2023-12-08 20:53:17,716 INFO [default] obj = -7094.19
+2023-12-08 20:53:17,718 INFO [default] rho = 0.190343
+2023-12-08 20:53:17,718 INFO [default] #sv = 15871
+2023-12-08 20:53:23,878 INFO [default] working set size = 1024
+2023-12-08 20:53:23,879 INFO [default] training start
+2023-12-08 20:53:24,654 INFO [default] global iter = 0, total local iter = 640, diff = 2
+2023-12-08 20:54:05,988 INFO [default] global iter = 100, total local iter = 49789, diff = 0.0145605
+2023-12-08 20:54:20,987 INFO [default] global iter = 137, total local iter = 62392, diff = 0.000997762
+2023-12-08 20:54:20,988 INFO [default] training finished
+2023-12-08 20:54:20,988 INFO [default] obj = -7298.15
+2023-12-08 20:54:20,988 INFO [default] rho = 0.108791
+2023-12-08 20:54:20,988 INFO [default] #sv = 18766
+2023-12-08 20:54:25,622 INFO [default] working set size = 1024
+2023-12-08 20:54:25,623 INFO [default] training start
+2023-12-08 20:54:26,146 INFO [default] global iter = 0, total local iter = 676, diff = 2
+2023-12-08 20:54:50,907 INFO [default] global iter = 90, total local iter = 41163, diff = 0.000999663
+2023-12-08 20:54:50,907 INFO [default] training finished
+2023-12-08 20:54:50,907 INFO [default] obj = -4781.82
+2023-12-08 20:54:50,908 INFO [default] rho = -0.162412
+2023-12-08 20:54:50,908 INFO [default] #sv = 12209
+2023-12-08 20:54:53,487 INFO [default] working set size = 1024
+2023-12-08 20:54:53,487 INFO [default] training start
+2023-12-08 20:54:53,827 INFO [default] global iter = 0, total local iter = 687, diff = 2
+2023-12-08 20:55:02,985 INFO [default] global iter = 53, total local iter = 23470, diff = 0.000998385
+2023-12-08 20:55:02,985 INFO [default] training finished
+2023-12-08 20:55:02,985 INFO [default] obj = -1258.81
+2023-12-08 20:55:02,986 INFO [default] rho = -0.782415
+2023-12-08 20:55:02,986 INFO [default] #sv = 7682
+2023-12-08 20:55:08,116 INFO [default] working set size = 1024
+2023-12-08 20:55:08,117 INFO [default] training start
+2023-12-08 20:55:08,740 INFO [default] global iter = 0, total local iter = 608, diff = 2
+2023-12-08 20:55:41,706 INFO [default] global iter = 100, total local iter = 50014, diff = 0.00504746
+2023-12-08 20:55:47,895 INFO [default] global iter = 119, total local iter = 54753, diff = 0.000998395
+2023-12-08 20:55:47,895 INFO [default] training finished
+2023-12-08 20:55:47,895 INFO [default] obj = -7467.4
+2023-12-08 20:55:47,896 INFO [default] rho = 0.140494
+2023-12-08 20:55:47,896 INFO [default] #sv = 15945
+2023-12-08 20:55:53,127 INFO [default] working set size = 1024
+2023-12-08 20:55:53,128 INFO [default] training start
+2023-12-08 20:55:53,761 INFO [default] global iter = 0, total local iter = 662, diff = 2
+2023-12-08 20:56:27,320 INFO [default] global iter = 100, total local iter = 52093, diff = 0.00509738
+2023-12-08 20:56:33,616 INFO [default] global iter = 119, total local iter = 57002, diff = 0.000999529
+2023-12-08 20:56:33,616 INFO [default] training finished
+2023-12-08 20:56:33,617 INFO [default] obj = -7081.45
+2023-12-08 20:56:33,618 INFO [default] rho = -0.0248599
+2023-12-08 20:56:33,618 INFO [default] #sv = 16101
+2023-12-08 20:56:39,799 INFO [default] working set size = 1024
+2023-12-08 20:56:39,800 INFO [default] training start
+2023-12-08 20:56:40,580 INFO [default] global iter = 0, total local iter = 661, diff = 2
+2023-12-08 20:57:21,803 INFO [default] global iter = 100, total local iter = 50375, diff = 0.0165842
+2023-12-08 20:57:37,802 INFO [default] global iter = 139, total local iter = 63405, diff = 0.000999057
+2023-12-08 20:57:37,802 INFO [default] training finished
+2023-12-08 20:57:37,802 INFO [default] obj = -7259.89
+2023-12-08 20:57:37,803 INFO [default] rho = -0.0927133
+2023-12-08 20:57:37,803 INFO [default] #sv = 19094
+2023-12-08 20:57:42,378 INFO [default] working set size = 1024
+2023-12-08 20:57:42,379 INFO [default] training start
+2023-12-08 20:57:42,904 INFO [default] global iter = 0, total local iter = 671, diff = 2
+2023-12-08 20:58:09,886 INFO [default] global iter = 99, total local iter = 46471, diff = 0.000998668
+2023-12-08 20:58:09,886 INFO [default] training finished
+2023-12-08 20:58:09,886 INFO [default] obj = -5548.97
+2023-12-08 20:58:09,887 INFO [default] rho = -0.333743
+2023-12-08 20:58:09,887 INFO [default] #sv = 12828
+2023-12-08 20:58:12,557 INFO [default] working set size = 1024
+2023-12-08 20:58:12,558 INFO [default] training start
+2023-12-08 20:58:12,910 INFO [default] global iter = 0, total local iter = 705, diff = 2
+2023-12-08 20:58:22,656 INFO [default] global iter = 55, total local iter = 24797, diff = 0.000999836
+2023-12-08 20:58:22,657 INFO [default] training finished
+2023-12-08 20:58:22,657 INFO [default] obj = -1254.47
+2023-12-08 20:58:22,657 INFO [default] rho = -0.836608
+2023-12-08 20:58:22,657 INFO [default] #sv = 7745
+2023-12-08 20:58:28,170 INFO [default] working set size = 1024
+2023-12-08 20:58:28,171 INFO [default] training start
+2023-12-08 20:58:28,853 INFO [default] global iter = 0, total local iter = 715, diff = 2
+2023-12-08 20:59:04,767 INFO [default] global iter = 100, total local iter = 51341, diff = 0.00854842
+2023-12-08 20:59:14,038 INFO [default] global iter = 126, total local iter = 58802, diff = 0.000997873
+2023-12-08 20:59:14,038 INFO [default] training finished
+2023-12-08 20:59:14,038 INFO [default] obj = -8115.41
+2023-12-08 20:59:14,039 INFO [default] rho = -0.17249
+2023-12-08 20:59:14,039 INFO [default] #sv = 17485
+2023-12-08 20:59:20,760 INFO [default] working set size = 1024
+2023-12-08 20:59:20,762 INFO [default] training start
+2023-12-08 20:59:21,607 INFO [default] global iter = 0, total local iter = 702, diff = 2
+2023-12-08 21:00:05,609 INFO [default] global iter = 100, total local iter = 50040, diff = 0.0233364
+2023-12-08 21:00:25,088 INFO [default] global iter = 144, total local iter = 65229, diff = 0.000997343
+2023-12-08 21:00:25,088 INFO [default] training finished
+2023-12-08 21:00:25,088 INFO [default] obj = -8114.21
+2023-12-08 21:00:25,089 INFO [default] rho = -0.229906
+2023-12-08 21:00:25,089 INFO [default] #sv = 20287
+2023-12-08 21:00:30,032 INFO [default] working set size = 1024
+2023-12-08 21:00:30,033 INFO [default] training start
+2023-12-08 21:00:30,596 INFO [default] global iter = 0, total local iter = 746, diff = 2
+2023-12-08 21:01:00,283 INFO [default] global iter = 100, total local iter = 45870, diff = 0.00108378
+2023-12-08 21:01:00,573 INFO [default] global iter = 101, total local iter = 45870, diff = 0.00099982
+2023-12-08 21:01:00,573 INFO [default] training finished
+2023-12-08 21:01:00,573 INFO [default] obj = -5069.3
+2023-12-08 21:01:00,574 INFO [default] rho = -0.450406
+2023-12-08 21:01:00,574 INFO [default] #sv = 13725
+2023-12-08 21:01:03,408 INFO [default] working set size = 1024
+2023-12-08 21:01:03,409 INFO [default] training start
+2023-12-08 21:01:03,801 INFO [default] global iter = 0, total local iter = 745, diff = 2
+2023-12-08 21:01:16,058 INFO [default] global iter = 61, total local iter = 27015, diff = 0.000998805
+2023-12-08 21:01:16,058 INFO [default] training finished
+2023-12-08 21:01:16,058 INFO [default] obj = -1252.23
+2023-12-08 21:01:16,058 INFO [default] rho = -0.871877
+2023-12-08 21:01:16,058 INFO [default] #sv = 9009
+2023-12-08 21:01:22,637 INFO [default] working set size = 1024
+2023-12-08 21:01:22,638 INFO [default] training start
+2023-12-08 21:01:23,523 INFO [default] global iter = 0, total local iter = 618, diff = 2
+2023-12-08 21:02:09,999 INFO [default] global iter = 100, total local iter = 51390, diff = 0.0319309
+2023-12-08 21:02:31,592 INFO [default] global iter = 149, total local iter = 69758, diff = 0.000999022
+2023-12-08 21:02:31,592 INFO [default] training finished
+2023-12-08 21:02:31,592 INFO [default] obj = -8145.37
+2023-12-08 21:02:31,593 INFO [default] rho = -0.0772312
+2023-12-08 21:02:31,593 INFO [default] #sv = 20481
+2023-12-08 21:02:36,618 INFO [default] working set size = 1024
+2023-12-08 21:02:36,620 INFO [default] training start
+2023-12-08 21:02:37,191 INFO [default] global iter = 0, total local iter = 659, diff = 2
+2023-12-08 21:03:10,966 INFO [default] global iter = 100, total local iter = 50149, diff = 0.00194124
+2023-12-08 21:03:12,708 INFO [default] global iter = 105, total local iter = 50951, diff = 0.000998679
+2023-12-08 21:03:12,708 INFO [default] training finished
+2023-12-08 21:03:12,708 INFO [default] obj = -5249.05
+2023-12-08 21:03:12,709 INFO [default] rho = -0.323425
+2023-12-08 21:03:12,709 INFO [default] #sv = 13872
+2023-12-08 21:03:15,880 INFO [default] working set size = 1024
+2023-12-08 21:03:15,881 INFO [default] training start
+2023-12-08 21:03:16,331 INFO [default] global iter = 0, total local iter = 669, diff = 2
+2023-12-08 21:03:30,380 INFO [default] global iter = 59, total local iter = 26680, diff = 0.000999682
+2023-12-08 21:03:30,380 INFO [default] training finished
+2023-12-08 21:03:30,380 INFO [default] obj = -1227.21
+2023-12-08 21:03:30,381 INFO [default] rho = -0.814614
+2023-12-08 21:03:30,381 INFO [default] #sv = 8610
+2023-12-08 21:03:36,302 INFO [default] working set size = 1024
+2023-12-08 21:03:36,305 INFO [default] training start
+2023-12-08 21:03:37,193 INFO [default] global iter = 0, total local iter = 678, diff = 2
+2023-12-08 21:04:15,173 INFO [default] global iter = 100, total local iter = 48883, diff = 0.00589315
+2023-12-08 21:04:22,720 INFO [default] global iter = 120, total local iter = 54061, diff = 0.000998947
+2023-12-08 21:04:22,720 INFO [default] training finished
+2023-12-08 21:04:22,720 INFO [default] obj = -5455.39
+2023-12-08 21:04:22,721 INFO [default] rho = -0.266202
+2023-12-08 21:04:22,721 INFO [default] #sv = 16676
+2023-12-08 21:04:27,316 INFO [default] working set size = 1024
+2023-12-08 21:04:27,317 INFO [default] training start
+2023-12-08 21:04:27,854 INFO [default] global iter = 0, total local iter = 676, diff = 2
+2023-12-08 21:04:47,458 INFO [default] global iter = 69, total local iter = 30571, diff = 0.000997449
+2023-12-08 21:04:47,458 INFO [default] training finished
+2023-12-08 21:04:47,458 INFO [default] obj = -1242.15
+2023-12-08 21:04:47,459 INFO [default] rho = -0.814319
+2023-12-08 21:04:47,459 INFO [default] #sv = 10628
+2023-12-08 21:04:49,730 INFO [default] working set size = 1024
+2023-12-08 21:04:49,731 INFO [default] training start
+2023-12-08 21:04:50,028 INFO [default] global iter = 0, total local iter = 653, diff = 2
+2023-12-08 21:04:55,831 INFO [default] global iter = 40, total local iter = 17384, diff = 0.000997643
+2023-12-08 21:04:55,831 INFO [default] training finished
+2023-12-08 21:04:55,831 INFO [default] obj = -1109.5
+2023-12-08 21:04:55,831 INFO [default] rho = -0.690365
+2023-12-08 21:04:55,831 INFO [default] #sv = 5591
+2023-12-08 21:05:00,504 INFO [default] #total unique sv = 51207
+2023-12-08 21:05:54,480 INFO [default] #classes = 7
+2023-12-08 21:05:59,728 INFO [default] working set size = 1024
+2023-12-08 21:05:59,730 INFO [default] training start
+2023-12-08 21:06:00,296 INFO [default] global iter = 0, total local iter = 588, diff = 2
+2023-12-08 21:06:31,447 INFO [default] global iter = 100, total local iter = 48508, diff = 0.00170793
+2023-12-08 21:06:32,826 INFO [default] global iter = 104, total local iter = 49012, diff = 0.000999348
+2023-12-08 21:06:32,826 INFO [default] training finished
+2023-12-08 21:06:32,826 INFO [default] obj = -6681.62
+2023-12-08 21:06:32,827 INFO [default] rho = 0.188947
+2023-12-08 21:06:32,827 INFO [default] #sv = 14401
+2023-12-08 21:06:38,621 INFO [default] working set size = 1024
+2023-12-08 21:06:38,622 INFO [default] training start
+2023-12-08 21:06:39,335 INFO [default] global iter = 0, total local iter = 587, diff = 2
+2023-12-08 21:07:15,935 INFO [default] global iter = 100, total local iter = 49094, diff = 0.00456808
+2023-12-08 21:07:20,774 INFO [default] global iter = 115, total local iter = 52711, diff = 0.000998208
+2023-12-08 21:07:20,774 INFO [default] training finished
+2023-12-08 21:07:20,774 INFO [default] obj = -7344.2
+2023-12-08 21:07:20,775 INFO [default] rho = 0.333117
+2023-12-08 21:07:20,775 INFO [default] #sv = 15732
+2023-12-08 21:07:26,461 INFO [default] working set size = 1024
+2023-12-08 21:07:26,462 INFO [default] training start
+2023-12-08 21:07:27,087 INFO [default] global iter = 0, total local iter = 630, diff = 2
+2023-12-08 21:08:00,163 INFO [default] global iter = 100, total local iter = 52000, diff = 0.00528603
+2023-12-08 21:08:06,387 INFO [default] global iter = 119, total local iter = 56745, diff = 0.00099796
+2023-12-08 21:08:06,387 INFO [default] training finished
+2023-12-08 21:08:06,387 INFO [default] obj = -7127.83
+2023-12-08 21:08:06,388 INFO [default] rho = 0.196593
+2023-12-08 21:08:06,388 INFO [default] #sv = 15884
+2023-12-08 21:08:13,239 INFO [default] working set size = 1024
+2023-12-08 21:08:13,240 INFO [default] training start
+2023-12-08 21:08:14,016 INFO [default] global iter = 0, total local iter = 632, diff = 2
+2023-12-08 21:08:54,796 INFO [default] global iter = 100, total local iter = 49779, diff = 0.0168233
+2023-12-08 21:09:10,306 INFO [default] global iter = 138, total local iter = 62550, diff = 0.000997089
+2023-12-08 21:09:10,306 INFO [default] training finished
+2023-12-08 21:09:10,306 INFO [default] obj = -7278.2
+2023-12-08 21:09:10,307 INFO [default] rho = 0.134625
+2023-12-08 21:09:10,307 INFO [default] #sv = 18720
+2023-12-08 21:09:15,279 INFO [default] working set size = 1024
+2023-12-08 21:09:15,280 INFO [default] training start
+2023-12-08 21:09:15,809 INFO [default] global iter = 0, total local iter = 682, diff = 2
+2023-12-08 21:09:40,249 INFO [default] global iter = 91, total local iter = 42484, diff = 0.000999915
+2023-12-08 21:09:40,249 INFO [default] training finished
+2023-12-08 21:09:40,249 INFO [default] obj = -4800.14
+2023-12-08 21:09:40,249 INFO [default] rho = -0.121236
+2023-12-08 21:09:40,249 INFO [default] #sv = 12228
+2023-12-08 21:09:43,171 INFO [default] working set size = 1024
+2023-12-08 21:09:43,172 INFO [default] training start
+2023-12-08 21:09:43,521 INFO [default] global iter = 0, total local iter = 671, diff = 2
+2023-12-08 21:09:52,972 INFO [default] global iter = 55, total local iter = 23887, diff = 0.000999351
+2023-12-08 21:09:52,972 INFO [default] training finished
+2023-12-08 21:09:52,972 INFO [default] obj = -1264.4
+2023-12-08 21:09:52,973 INFO [default] rho = -0.771093
+2023-12-08 21:09:52,973 INFO [default] #sv = 7657
+2023-12-08 21:09:58,909 INFO [default] working set size = 1024
+2023-12-08 21:09:58,910 INFO [default] training start
+2023-12-08 21:09:59,538 INFO [default] global iter = 0, total local iter = 608, diff = 2
+2023-12-08 21:10:32,718 INFO [default] global iter = 100, total local iter = 49616, diff = 0.00433502
+2023-12-08 21:10:37,944 INFO [default] global iter = 116, total local iter = 53621, diff = 0.000998763
+2023-12-08 21:10:37,944 INFO [default] training finished
+2023-12-08 21:10:37,944 INFO [default] obj = -7469.24
+2023-12-08 21:10:37,944 INFO [default] rho = 0.134333
+2023-12-08 21:10:37,944 INFO [default] #sv = 15935
+2023-12-08 21:10:43,897 INFO [default] working set size = 1024
+2023-12-08 21:10:43,898 INFO [default] training start
+2023-12-08 21:10:44,532 INFO [default] global iter = 0, total local iter = 629, diff = 2
+2023-12-08 21:11:18,238 INFO [default] global iter = 100, total local iter = 52227, diff = 0.00558829
+2023-12-08 21:11:24,919 INFO [default] global iter = 120, total local iter = 57405, diff = 0.000999732
+2023-12-08 21:11:24,919 INFO [default] training finished
+2023-12-08 21:11:24,919 INFO [default] obj = -7119.95
+2023-12-08 21:11:24,920 INFO [default] rho = 0.00340127
+2023-12-08 21:11:24,920 INFO [default] #sv = 16117
+2023-12-08 21:11:31,611 INFO [default] working set size = 1024
+2023-12-08 21:11:31,612 INFO [default] training start
+2023-12-08 21:11:32,394 INFO [default] global iter = 0, total local iter = 642, diff = 2
+2023-12-08 21:12:13,651 INFO [default] global iter = 100, total local iter = 49797, diff = 0.0158438
+2023-12-08 21:12:29,702 INFO [default] global iter = 139, total local iter = 63352, diff = 0.000999383
+2023-12-08 21:12:29,702 INFO [default] training finished
+2023-12-08 21:12:29,702 INFO [default] obj = -7246.01
+2023-12-08 21:12:29,702 INFO [default] rho = -0.0416733
+2023-12-08 21:12:29,702 INFO [default] #sv = 19071
+2023-12-08 21:12:34,618 INFO [default] working set size = 1024
+2023-12-08 21:12:34,619 INFO [default] training start
+2023-12-08 21:12:35,134 INFO [default] global iter = 0, total local iter = 648, diff = 2
+2023-12-08 21:13:02,155 INFO [default] global iter = 99, total local iter = 46717, diff = 0.00099979
+2023-12-08 21:13:02,155 INFO [default] training finished
+2023-12-08 21:13:02,155 INFO [default] obj = -5508.97
+2023-12-08 21:13:02,156 INFO [default] rho = -0.271387
+2023-12-08 21:13:02,156 INFO [default] #sv = 12802
+2023-12-08 21:13:04,978 INFO [default] working set size = 1024
+2023-12-08 21:13:04,979 INFO [default] training start
+2023-12-08 21:13:05,321 INFO [default] global iter = 0, total local iter = 672, diff = 2
+2023-12-08 21:13:15,082 INFO [default] global iter = 55, total local iter = 24529, diff = 0.000999596
+2023-12-08 21:13:15,082 INFO [default] training finished
+2023-12-08 21:13:15,082 INFO [default] obj = -1261.62
+2023-12-08 21:13:15,083 INFO [default] rho = -0.823705
+2023-12-08 21:13:15,083 INFO [default] #sv = 7735
+2023-12-08 21:13:21,027 INFO [default] working set size = 1024
+2023-12-08 21:13:21,028 INFO [default] training start
+2023-12-08 21:13:21,709 INFO [default] global iter = 0, total local iter = 701, diff = 2
+2023-12-08 21:13:57,685 INFO [default] global iter = 100, total local iter = 52685, diff = 0.00846628
+2023-12-08 21:14:07,343 INFO [default] global iter = 127, total local iter = 60587, diff = 0.000999714
+2023-12-08 21:14:07,343 INFO [default] training finished
+2023-12-08 21:14:07,343 INFO [default] obj = -8123.78
+2023-12-08 21:14:07,344 INFO [default] rho = -0.144146
+2023-12-08 21:14:07,345 INFO [default] #sv = 17490
+2023-12-08 21:14:14,124 INFO [default] working set size = 1024
+2023-12-08 21:14:14,125 INFO [default] training start
+2023-12-08 21:14:15,096 INFO [default] global iter = 0, total local iter = 697, diff = 2
+2023-12-08 21:15:04,425 INFO [default] global iter = 100, total local iter = 50143, diff = 0.0198565
+2023-12-08 21:15:23,533 INFO [default] global iter = 144, total local iter = 65677, diff = 0.000999516
+2023-12-08 21:15:23,533 INFO [default] training finished
+2023-12-08 21:15:23,533 INFO [default] obj = -8092.81
+2023-12-08 21:15:23,534 INFO [default] rho = -0.178496
+2023-12-08 21:15:23,534 INFO [default] #sv = 20269
+2023-12-08 21:15:28,815 INFO [default] working set size = 1024
+2023-12-08 21:15:28,816 INFO [default] training start
+2023-12-08 21:15:29,379 INFO [default] global iter = 0, total local iter = 734, diff = 2
+2023-12-08 21:15:59,193 INFO [default] global iter = 100, total local iter = 45458, diff = 0.000998735
+2023-12-08 21:15:59,193 INFO [default] global iter = 100, total local iter = 45458, diff = 0.000998735
+2023-12-08 21:15:59,193 INFO [default] training finished
+2023-12-08 21:15:59,193 INFO [default] obj = -5053.74
+2023-12-08 21:15:59,194 INFO [default] rho = -0.409185
+2023-12-08 21:15:59,194 INFO [default] #sv = 13708
+2023-12-08 21:16:02,364 INFO [default] working set size = 1024
+2023-12-08 21:16:02,365 INFO [default] training start
+2023-12-08 21:16:02,765 INFO [default] global iter = 0, total local iter = 716, diff = 2
+2023-12-08 21:16:15,040 INFO [default] global iter = 61, total local iter = 27453, diff = 0.000997677
+2023-12-08 21:16:15,040 INFO [default] training finished
+2023-12-08 21:16:15,040 INFO [default] obj = -1258.72
+2023-12-08 21:16:15,041 INFO [default] rho = -0.857749
+2023-12-08 21:16:15,041 INFO [default] #sv = 8966
+2023-12-08 21:16:22,123 INFO [default] working set size = 1024
+2023-12-08 21:16:22,125 INFO [default] training start
+2023-12-08 21:16:22,970 INFO [default] global iter = 0, total local iter = 615, diff = 2
+2023-12-08 21:17:07,350 INFO [default] global iter = 100, total local iter = 51355, diff = 0.026652
+2023-12-08 21:17:32,089 INFO [default] global iter = 149, total local iter = 69289, diff = 0.000999365
+2023-12-08 21:17:32,089 INFO [default] training finished
+2023-12-08 21:17:32,089 INFO [default] obj = -8091.32
+2023-12-08 21:17:32,090 INFO [default] rho = -0.0545618
+2023-12-08 21:17:32,090 INFO [default] #sv = 20398
+2023-12-08 21:17:37,212 INFO [default] working set size = 1024
+2023-12-08 21:17:37,213 INFO [default] training start
+2023-12-08 21:17:37,901 INFO [default] global iter = 0, total local iter = 645, diff = 2
+2023-12-08 21:18:08,326 INFO [default] global iter = 100, total local iter = 48640, diff = 0.00162657
+2023-12-08 21:18:09,525 INFO [default] global iter = 104, total local iter = 49188, diff = 0.000999766
+2023-12-08 21:18:09,525 INFO [default] training finished
+2023-12-08 21:18:09,525 INFO [default] obj = -5235.84
+2023-12-08 21:18:09,526 INFO [default] rho = -0.296645
+2023-12-08 21:18:09,526 INFO [default] #sv = 13893
+2023-12-08 21:18:12,691 INFO [default] working set size = 1024
+2023-12-08 21:18:12,692 INFO [default] training start
+2023-12-08 21:18:13,099 INFO [default] global iter = 0, total local iter = 659, diff = 2
+2023-12-08 21:18:25,231 INFO [default] global iter = 59, total local iter = 26826, diff = 0.000998345
+2023-12-08 21:18:25,231 INFO [default] training finished
+2023-12-08 21:18:25,231 INFO [default] obj = -1236.21
+2023-12-08 21:18:25,231 INFO [default] rho = -0.813265
+2023-12-08 21:18:25,231 INFO [default] #sv = 8629
+2023-12-08 21:18:31,532 INFO [default] working set size = 1024
+2023-12-08 21:18:31,538 INFO [default] training start
+2023-12-08 21:18:32,260 INFO [default] global iter = 0, total local iter = 667, diff = 2
+2023-12-08 21:19:10,361 INFO [default] global iter = 100, total local iter = 48251, diff = 0.00575738
+2023-12-08 21:19:17,581 INFO [default] global iter = 119, total local iter = 53139, diff = 0.00099978
+2023-12-08 21:19:17,581 INFO [default] training finished
+2023-12-08 21:19:17,581 INFO [default] obj = -5415.02
+2023-12-08 21:19:17,582 INFO [default] rho = -0.265354
+2023-12-08 21:19:17,582 INFO [default] #sv = 16635
+2023-12-08 21:19:22,678 INFO [default] working set size = 1024
+2023-12-08 21:19:22,690 INFO [default] training start
+2023-12-08 21:19:23,239 INFO [default] global iter = 0, total local iter = 686, diff = 2
+2023-12-08 21:19:43,121 INFO [default] global iter = 70, total local iter = 30954, diff = 0.000999989
+2023-12-08 21:19:43,121 INFO [default] training finished
+2023-12-08 21:19:43,121 INFO [default] obj = -1245.29
+2023-12-08 21:19:43,122 INFO [default] rho = -0.814006
+2023-12-08 21:19:43,124 INFO [default] #sv = 10555
+2023-12-08 21:19:45,706 INFO [default] working set size = 1024
+2023-12-08 21:19:45,707 INFO [default] training start
+2023-12-08 21:19:45,996 INFO [default] global iter = 0, total local iter = 644, diff = 2
+2023-12-08 21:19:51,465 INFO [default] global iter = 38, total local iter = 16542, diff = 0.000999861
+2023-12-08 21:19:51,465 INFO [default] training finished
+2023-12-08 21:19:51,465 INFO [default] obj = -1105.72
+2023-12-08 21:19:51,466 INFO [default] rho = -0.692652
+2023-12-08 21:19:51,466 INFO [default] #sv = 5566
+2023-12-08 21:19:55,935 INFO [default] #total unique sv = 51169
+2023-12-08 21:20:48,503 INFO [default] #classes = 7
+2023-12-08 21:20:53,808 INFO [default] working set size = 1024
+2023-12-08 21:20:53,812 INFO [default] training start
+2023-12-08 21:20:54,392 INFO [default] global iter = 0, total local iter = 588, diff = 2
+2023-12-08 21:21:24,590 INFO [default] global iter = 100, total local iter = 48565, diff = 0.00174039
+2023-12-08 21:21:26,065 INFO [default] global iter = 105, total local iter = 49269, diff = 0.000999966
+2023-12-08 21:21:26,065 INFO [default] training finished
+2023-12-08 21:21:26,065 INFO [default] obj = -6668.57
+2023-12-08 21:21:26,065 INFO [default] rho = 0.214555
+2023-12-08 21:21:26,065 INFO [default] #sv = 14395
+2023-12-08 21:21:31,244 INFO [default] working set size = 1024
+2023-12-08 21:21:31,245 INFO [default] training start
+2023-12-08 21:21:31,868 INFO [default] global iter = 0, total local iter = 587, diff = 2
+2023-12-08 21:22:04,633 INFO [default] global iter = 100, total local iter = 50084, diff = 0.00434787
+2023-12-08 21:22:10,820 INFO [default] global iter = 117, total local iter = 54113, diff = 0.00099859
+2023-12-08 21:22:10,820 INFO [default] training finished
+2023-12-08 21:22:10,820 INFO [default] obj = -7321.14
+2023-12-08 21:22:10,821 INFO [default] rho = 0.350071
+2023-12-08 21:22:10,821 INFO [default] #sv = 15724
+2023-12-08 21:22:16,290 INFO [default] working set size = 1024
+2023-12-08 21:22:16,291 INFO [default] training start
+2023-12-08 21:22:17,037 INFO [default] global iter = 0, total local iter = 630, diff = 2
+2023-12-08 21:22:55,551 INFO [default] global iter = 100, total local iter = 51679, diff = 0.004907
+2023-12-08 21:23:02,340 INFO [default] global iter = 118, total local iter = 56101, diff = 0.000999001
+2023-12-08 21:23:02,340 INFO [default] training finished
+2023-12-08 21:23:02,340 INFO [default] obj = -7069.84
+2023-12-08 21:23:02,341 INFO [default] rho = 0.188756
+2023-12-08 21:23:02,342 INFO [default] #sv = 15879
+2023-12-08 21:23:09,488 INFO [default] working set size = 1024
+2023-12-08 21:23:09,489 INFO [default] training start
+2023-12-08 21:23:10,376 INFO [default] global iter = 0, total local iter = 632, diff = 2
+2023-12-08 21:23:57,143 INFO [default] global iter = 100, total local iter = 49324, diff = 0.0173329
+2023-12-08 21:24:14,360 INFO [default] global iter = 137, total local iter = 61690, diff = 0.000999981
+2023-12-08 21:24:14,360 INFO [default] training finished
+2023-12-08 21:24:14,360 INFO [default] obj = -7311.39
+2023-12-08 21:24:14,361 INFO [default] rho = 0.100385
+2023-12-08 21:24:14,361 INFO [default] #sv = 18778
+2023-12-08 21:24:19,363 INFO [default] working set size = 1024
+2023-12-08 21:24:19,364 INFO [default] training start
+2023-12-08 21:24:19,950 INFO [default] global iter = 0, total local iter = 682, diff = 2
+2023-12-08 21:24:47,860 INFO [default] global iter = 91, total local iter = 42298, diff = 0.000999978
+2023-12-08 21:24:47,860 INFO [default] training finished
+2023-12-08 21:24:47,860 INFO [default] obj = -4795.68
+2023-12-08 21:24:47,861 INFO [default] rho = -0.134621
+2023-12-08 21:24:47,861 INFO [default] #sv = 12220
+2023-12-08 21:24:50,574 INFO [default] working set size = 1024
+2023-12-08 21:24:50,575 INFO [default] training start
+2023-12-08 21:24:50,967 INFO [default] global iter = 0, total local iter = 678, diff = 2
+2023-12-08 21:25:01,654 INFO [default] global iter = 54, total local iter = 24397, diff = 0.000998845
+2023-12-08 21:25:01,654 INFO [default] training finished
+2023-12-08 21:25:01,654 INFO [default] obj = -1264.23
+2023-12-08 21:25:01,655 INFO [default] rho = -0.778804
+2023-12-08 21:25:01,655 INFO [default] #sv = 7639
+2023-12-08 21:25:07,435 INFO [default] working set size = 1024
+2023-12-08 21:25:07,436 INFO [default] training start
+2023-12-08 21:25:08,152 INFO [default] global iter = 0, total local iter = 608, diff = 2
+2023-12-08 21:25:45,908 INFO [default] global iter = 100, total local iter = 50117, diff = 0.00550256
+2023-12-08 21:25:53,039 INFO [default] global iter = 119, total local iter = 54758, diff = 0.000999164
+2023-12-08 21:25:53,039 INFO [default] training finished
+2023-12-08 21:25:53,039 INFO [default] obj = -7476.08
+2023-12-08 21:25:53,040 INFO [default] rho = 0.101874
+2023-12-08 21:25:53,040 INFO [default] #sv = 15943
+2023-12-08 21:25:58,514 INFO [default] working set size = 1024
+2023-12-08 21:25:58,515 INFO [default] training start
+2023-12-08 21:25:59,241 INFO [default] global iter = 0, total local iter = 629, diff = 2
+2023-12-08 21:26:37,674 INFO [default] global iter = 100, total local iter = 52499, diff = 0.00532136
+2023-12-08 21:26:45,260 INFO [default] global iter = 120, total local iter = 57964, diff = 0.000999411
+2023-12-08 21:26:45,260 INFO [default] training finished
+2023-12-08 21:26:45,260 INFO [default] obj = -7099.67
+2023-12-08 21:26:45,261 INFO [default] rho = -0.0335493
+2023-12-08 21:26:45,261 INFO [default] #sv = 16119
+2023-12-08 21:26:51,907 INFO [default] working set size = 1024
+2023-12-08 21:26:51,909 INFO [default] training start
+2023-12-08 21:26:52,807 INFO [default] global iter = 0, total local iter = 642, diff = 2
+2023-12-08 21:27:39,835 INFO [default] global iter = 100, total local iter = 50760, diff = 0.0183757
+2023-12-08 21:27:59,513 INFO [default] global iter = 142, total local iter = 64991, diff = 0.000998897
+2023-12-08 21:27:59,513 INFO [default] training finished
+2023-12-08 21:27:59,513 INFO [default] obj = -7275.91
+2023-12-08 21:27:59,514 INFO [default] rho = -0.112461
+2023-12-08 21:27:59,514 INFO [default] #sv = 19145
+2023-12-08 21:28:04,502 INFO [default] working set size = 1024
+2023-12-08 21:28:04,503 INFO [default] training start
+2023-12-08 21:28:05,091 INFO [default] global iter = 0, total local iter = 648, diff = 2
+2023-12-08 21:28:36,249 INFO [default] global iter = 100, total local iter = 47118, diff = 0.000999797
+2023-12-08 21:28:36,249 INFO [default] global iter = 100, total local iter = 47118, diff = 0.000999797
+2023-12-08 21:28:36,249 INFO [default] training finished
+2023-12-08 21:28:36,249 INFO [default] obj = -5577.57
+2023-12-08 21:28:36,250 INFO [default] rho = -0.28258
+2023-12-08 21:28:36,250 INFO [default] #sv = 12832
+2023-12-08 21:28:39,068 INFO [default] working set size = 1024
+2023-12-08 21:28:39,069 INFO [default] training start
+2023-12-08 21:28:39,462 INFO [default] global iter = 0, total local iter = 672, diff = 2
+2023-12-08 21:28:50,549 INFO [default] global iter = 55, total local iter = 24789, diff = 0.000997796
+2023-12-08 21:28:50,550 INFO [default] training finished
+2023-12-08 21:28:50,550 INFO [default] obj = -1262.06
+2023-12-08 21:28:50,551 INFO [default] rho = -0.837513
+2023-12-08 21:28:50,551 INFO [default] #sv = 7769
+2023-12-08 21:28:56,944 INFO [default] working set size = 1024
+2023-12-08 21:28:56,945 INFO [default] training start
+2023-12-08 21:28:57,724 INFO [default] global iter = 0, total local iter = 701, diff = 2
+2023-12-08 21:29:38,900 INFO [default] global iter = 100, total local iter = 51556, diff = 0.00901147
+2023-12-08 21:29:49,587 INFO [default] global iter = 126, total local iter = 59106, diff = 0.000997592
+2023-12-08 21:29:49,587 INFO [default] training finished
+2023-12-08 21:29:49,587 INFO [default] obj = -8079.13
+2023-12-08 21:29:49,588 INFO [default] rho = -0.149101
+2023-12-08 21:29:49,588 INFO [default] #sv = 17482
+2023-12-08 21:29:56,699 INFO [default] working set size = 1024
+2023-12-08 21:29:56,701 INFO [default] training start
+2023-12-08 21:29:57,657 INFO [default] global iter = 0, total local iter = 697, diff = 2
+2023-12-08 21:30:47,627 INFO [default] global iter = 100, total local iter = 50088, diff = 0.0238167
+2023-12-08 21:31:10,041 INFO [default] global iter = 145, total local iter = 66086, diff = 0.000998637
+2023-12-08 21:31:10,041 INFO [default] training finished
+2023-12-08 21:31:10,041 INFO [default] obj = -8121.78
+2023-12-08 21:31:10,042 INFO [default] rho = -0.21402
+2023-12-08 21:31:10,042 INFO [default] #sv = 20330
+2023-12-08 21:31:15,373 INFO [default] working set size = 1024
+2023-12-08 21:31:15,374 INFO [default] training start
+2023-12-08 21:31:16,023 INFO [default] global iter = 0, total local iter = 734, diff = 2
+2023-12-08 21:31:50,042 INFO [default] global iter = 100, total local iter = 45909, diff = 0.00120151
+2023-12-08 21:31:50,710 INFO [default] global iter = 102, total local iter = 45925, diff = 0.000997794
+2023-12-08 21:31:50,710 INFO [default] training finished
+2023-12-08 21:31:50,710 INFO [default] obj = -5069.66
+2023-12-08 21:31:50,711 INFO [default] rho = -0.398215
+2023-12-08 21:31:50,711 INFO [default] #sv = 13748
+2023-12-08 21:31:53,780 INFO [default] working set size = 1024
+2023-12-08 21:31:53,781 INFO [default] training start
+2023-12-08 21:31:54,220 INFO [default] global iter = 0, total local iter = 730, diff = 2
+2023-12-08 21:32:08,014 INFO [default] global iter = 60, total local iter = 26908, diff = 0.000998369
+2023-12-08 21:32:08,014 INFO [default] training finished
+2023-12-08 21:32:08,014 INFO [default] obj = -1259.32
+2023-12-08 21:32:08,015 INFO [default] rho = -0.865874
+2023-12-08 21:32:08,016 INFO [default] #sv = 8969
+2023-12-08 21:32:14,827 INFO [default] working set size = 1024
+2023-12-08 21:32:14,828 INFO [default] training start
+2023-12-08 21:32:15,795 INFO [default] global iter = 0, total local iter = 615, diff = 2
+2023-12-08 21:33:06,456 INFO [default] global iter = 100, total local iter = 51240, diff = 0.0287818
+2023-12-08 21:33:31,712 INFO [default] global iter = 150, total local iter = 70316, diff = 0.000999252
+2023-12-08 21:33:31,712 INFO [default] training finished
+2023-12-08 21:33:31,712 INFO [default] obj = -8121.83
+2023-12-08 21:33:31,713 INFO [default] rho = -0.0897415
+2023-12-08 21:33:31,713 INFO [default] #sv = 20454
+2023-12-08 21:33:36,925 INFO [default] working set size = 1024
+2023-12-08 21:33:36,926 INFO [default] training start
+2023-12-08 21:33:37,580 INFO [default] global iter = 0, total local iter = 645, diff = 2
+2023-12-08 21:34:12,359 INFO [default] global iter = 100, total local iter = 49179, diff = 0.00195063
+2023-12-08 21:34:14,425 INFO [default] global iter = 106, total local iter = 50061, diff = 0.000999902
+2023-12-08 21:34:14,425 INFO [default] training finished
+2023-12-08 21:34:14,426 INFO [default] obj = -5250.66
+2023-12-08 21:34:14,427 INFO [default] rho = -0.285947
+2023-12-08 21:34:14,427 INFO [default] #sv = 13903
+2023-12-08 21:34:17,641 INFO [default] working set size = 1024
+2023-12-08 21:34:17,642 INFO [default] training start
+2023-12-08 21:34:18,087 INFO [default] global iter = 0, total local iter = 651, diff = 2
+2023-12-08 21:34:31,744 INFO [default] global iter = 58, total local iter = 26407, diff = 0.000999083
+2023-12-08 21:34:31,744 INFO [default] training finished
+2023-12-08 21:34:31,744 INFO [default] obj = -1233.85
+2023-12-08 21:34:31,745 INFO [default] rho = -0.817346
+2023-12-08 21:34:31,745 INFO [default] #sv = 8565
+2023-12-08 21:34:38,070 INFO [default] working set size = 1024
+2023-12-08 21:34:38,073 INFO [default] training start
+2023-12-08 21:34:38,897 INFO [default] global iter = 0, total local iter = 667, diff = 2
+2023-12-08 21:35:22,243 INFO [default] global iter = 100, total local iter = 48813, diff = 0.00553485
+2023-12-08 21:35:30,887 INFO [default] global iter = 120, total local iter = 53817, diff = 0.000999079
+2023-12-08 21:35:30,887 INFO [default] training finished
+2023-12-08 21:35:30,887 INFO [default] obj = -5444.47
+2023-12-08 21:35:30,888 INFO [default] rho = -0.223592
+2023-12-08 21:35:30,888 INFO [default] #sv = 16711
+2023-12-08 21:35:35,865 INFO [default] working set size = 1024
+2023-12-08 21:35:35,866 INFO [default] training start
+2023-12-08 21:35:36,491 INFO [default] global iter = 0, total local iter = 679, diff = 2
+2023-12-08 21:35:58,948 INFO [default] global iter = 69, total local iter = 30082, diff = 0.00099934
+2023-12-08 21:35:58,948 INFO [default] training finished
+2023-12-08 21:35:58,948 INFO [default] obj = -1244.59
+2023-12-08 21:35:58,949 INFO [default] rho = -0.81178
+2023-12-08 21:35:58,949 INFO [default] #sv = 10473
+2023-12-08 21:36:01,306 INFO [default] working set size = 1024
+2023-12-08 21:36:01,307 INFO [default] training start
+2023-12-08 21:36:01,624 INFO [default] global iter = 0, total local iter = 646, diff = 2
+2023-12-08 21:36:08,186 INFO [default] global iter = 40, total local iter = 17314, diff = 0.000997292
+2023-12-08 21:36:08,186 INFO [default] training finished
+2023-12-08 21:36:08,186 INFO [default] obj = -1118.25
+2023-12-08 21:36:08,186 INFO [default] rho = -0.706834
+2023-12-08 21:36:08,187 INFO [default] #sv = 5609
+2023-12-08 21:36:12,677 INFO [default] #total unique sv = 51208
+2023-12-08 21:37:09,800 INFO [default] #classes = 7
+2023-12-08 21:37:14,651 INFO [default] working set size = 1024
+2023-12-08 21:37:14,653 INFO [default] training start
+2023-12-08 21:37:15,301 INFO [default] global iter = 0, total local iter = 588, diff = 2
+2023-12-08 21:37:49,610 INFO [default] global iter = 100, total local iter = 48885, diff = 0.00186079
+2023-12-08 21:37:51,335 INFO [default] global iter = 105, total local iter = 49660, diff = 0.000999441
+2023-12-08 21:37:51,335 INFO [default] training finished
+2023-12-08 21:37:51,335 INFO [default] obj = -6699.01
+2023-12-08 21:37:51,336 INFO [default] rho = 0.242213
+2023-12-08 21:37:51,336 INFO [default] #sv = 14394
+2023-12-08 21:37:56,751 INFO [default] working set size = 1024
+2023-12-08 21:37:56,751 INFO [default] training start
+2023-12-08 21:37:57,454 INFO [default] global iter = 0, total local iter = 587, diff = 2
+2023-12-08 21:38:34,624 INFO [default] global iter = 100, total local iter = 49388, diff = 0.00395861
+2023-12-08 21:38:40,180 INFO [default] global iter = 115, total local iter = 52813, diff = 0.000999472
+2023-12-08 21:38:40,180 INFO [default] training finished
+2023-12-08 21:38:40,180 INFO [default] obj = -7328.61
+2023-12-08 21:38:40,181 INFO [default] rho = 0.387145
+2023-12-08 21:38:40,181 INFO [default] #sv = 15731
+2023-12-08 21:38:45,914 INFO [default] working set size = 1024
+2023-12-08 21:38:45,915 INFO [default] training start
+2023-12-08 21:38:46,629 INFO [default] global iter = 0, total local iter = 630, diff = 2
+2023-12-08 21:39:24,504 INFO [default] global iter = 100, total local iter = 51484, diff = 0.00429545
+2023-12-08 21:39:30,912 INFO [default] global iter = 117, total local iter = 55562, diff = 0.000999839
+2023-12-08 21:39:30,912 INFO [default] training finished
+2023-12-08 21:39:30,912 INFO [default] obj = -7099.44
+2023-12-08 21:39:30,913 INFO [default] rho = 0.224188
+2023-12-08 21:39:30,913 INFO [default] #sv = 15889
+2023-12-08 21:39:37,315 INFO [default] working set size = 1024
+2023-12-08 21:39:37,316 INFO [default] training start
+2023-12-08 21:39:38,206 INFO [default] global iter = 0, total local iter = 632, diff = 2
+2023-12-08 21:40:24,912 INFO [default] global iter = 100, total local iter = 49903, diff = 0.0174661
+2023-12-08 21:40:40,750 INFO [default] global iter = 138, total local iter = 62876, diff = 0.000999483
+2023-12-08 21:40:40,750 INFO [default] training finished
+2023-12-08 21:40:40,751 INFO [default] obj = -7296.75
+2023-12-08 21:40:40,751 INFO [default] rho = 0.158068
+2023-12-08 21:40:40,751 INFO [default] #sv = 18788
+2023-12-08 21:40:45,619 INFO [default] working set size = 1024
+2023-12-08 21:40:45,620 INFO [default] training start
+2023-12-08 21:40:46,128 INFO [default] global iter = 0, total local iter = 682, diff = 2
+2023-12-08 21:41:10,875 INFO [default] global iter = 92, total local iter = 42728, diff = 0.00099847
+2023-12-08 21:41:10,875 INFO [default] training finished
+2023-12-08 21:41:10,875 INFO [default] obj = -4801.33
+2023-12-08 21:41:10,876 INFO [default] rho = -0.110067
+2023-12-08 21:41:10,876 INFO [default] #sv = 12217
+2023-12-08 21:41:13,733 INFO [default] working set size = 1024
+2023-12-08 21:41:13,734 INFO [default] training start
+2023-12-08 21:41:14,064 INFO [default] global iter = 0, total local iter = 676, diff = 2
+2023-12-08 21:41:23,545 INFO [default] global iter = 54, total local iter = 24420, diff = 0.000998621
+2023-12-08 21:41:23,545 INFO [default] training finished
+2023-12-08 21:41:23,545 INFO [default] obj = -1265.92
+2023-12-08 21:41:23,545 INFO [default] rho = -0.783235
+2023-12-08 21:41:23,545 INFO [default] #sv = 7669
+2023-12-08 21:41:29,165 INFO [default] working set size = 1024
+2023-12-08 21:41:29,167 INFO [default] training start
+2023-12-08 21:41:29,907 INFO [default] global iter = 0, total local iter = 608, diff = 2
+2023-12-08 21:42:06,193 INFO [default] global iter = 100, total local iter = 50278, diff = 0.00479192
+2023-12-08 21:42:12,407 INFO [default] global iter = 119, total local iter = 55063, diff = 0.000999272
+2023-12-08 21:42:12,407 INFO [default] training finished
+2023-12-08 21:42:12,407 INFO [default] obj = -7442.57
+2023-12-08 21:42:12,408 INFO [default] rho = 0.116939
+2023-12-08 21:42:12,408 INFO [default] #sv = 15940
+2023-12-08 21:42:18,635 INFO [default] working set size = 1024
+2023-12-08 21:42:18,636 INFO [default] training start
+2023-12-08 21:42:19,276 INFO [default] global iter = 0, total local iter = 629, diff = 2
+2023-12-08 21:42:56,167 INFO [default] global iter = 100, total local iter = 52720, diff = 0.00554978
+2023-12-08 21:43:03,865 INFO [default] global iter = 120, total local iter = 58086, diff = 0.000999253
+2023-12-08 21:43:03,865 INFO [default] training finished
+2023-12-08 21:43:03,865 INFO [default] obj = -7113.21
+2023-12-08 21:43:03,866 INFO [default] rho = -0.00581453
+2023-12-08 21:43:03,866 INFO [default] #sv = 16115
+2023-12-08 21:43:10,502 INFO [default] working set size = 1024
+2023-12-08 21:43:10,503 INFO [default] training start
+2023-12-08 21:43:11,286 INFO [default] global iter = 0, total local iter = 642, diff = 2
+2023-12-08 21:43:52,422 INFO [default] global iter = 100, total local iter = 50491, diff = 0.0185413
+2023-12-08 21:44:08,426 INFO [default] global iter = 139, total local iter = 63771, diff = 0.000999792
+2023-12-08 21:44:08,426 INFO [default] training finished
+2023-12-08 21:44:08,426 INFO [default] obj = -7237.9
+2023-12-08 21:44:08,427 INFO [default] rho = -0.076553
+2023-12-08 21:44:08,427 INFO [default] #sv = 19054
+2023-12-08 21:44:13,334 INFO [default] working set size = 1024
+2023-12-08 21:44:13,335 INFO [default] training start
+2023-12-08 21:44:13,869 INFO [default] global iter = 0, total local iter = 648, diff = 2
+2023-12-08 21:44:41,934 INFO [default] global iter = 99, total local iter = 46801, diff = 0.000998915
+2023-12-08 21:44:41,934 INFO [default] training finished
+2023-12-08 21:44:41,934 INFO [default] obj = -5514.07
+2023-12-08 21:44:41,934 INFO [default] rho = -0.307188
+2023-12-08 21:44:41,934 INFO [default] #sv = 12780
+2023-12-08 21:44:44,739 INFO [default] working set size = 1024
+2023-12-08 21:44:44,740 INFO [default] training start
+2023-12-08 21:44:45,141 INFO [default] global iter = 0, total local iter = 679, diff = 2
+2023-12-08 21:44:56,532 INFO [default] global iter = 54, total local iter = 25072, diff = 0.000999674
+2023-12-08 21:44:56,532 INFO [default] training finished
+2023-12-08 21:44:56,532 INFO [default] obj = -1252.98
+2023-12-08 21:44:56,533 INFO [default] rho = -0.848825
+2023-12-08 21:44:56,533 INFO [default] #sv = 7765
+2023-12-08 21:45:02,432 INFO [default] working set size = 1024
+2023-12-08 21:45:02,433 INFO [default] training start
+2023-12-08 21:45:03,115 INFO [default] global iter = 0, total local iter = 701, diff = 2
+2023-12-08 21:45:39,054 INFO [default] global iter = 100, total local iter = 51404, diff = 0.00817251
+2023-12-08 21:45:47,950 INFO [default] global iter = 125, total local iter = 58685, diff = 0.000999406
+2023-12-08 21:45:47,950 INFO [default] training finished
+2023-12-08 21:45:47,950 INFO [default] obj = -8143.06
+2023-12-08 21:45:47,951 INFO [default] rho = -0.1383
+2023-12-08 21:45:47,951 INFO [default] #sv = 17512
+2023-12-08 21:45:54,644 INFO [default] working set size = 1024
+2023-12-08 21:45:54,645 INFO [default] training start
+2023-12-08 21:45:55,478 INFO [default] global iter = 0, total local iter = 697, diff = 2
+2023-12-08 21:46:39,214 INFO [default] global iter = 100, total local iter = 50396, diff = 0.0222086
+2023-12-08 21:46:58,394 INFO [default] global iter = 144, total local iter = 66063, diff = 0.00099983
+2023-12-08 21:46:58,394 INFO [default] training finished
+2023-12-08 21:46:58,394 INFO [default] obj = -8145.53
+2023-12-08 21:46:58,395 INFO [default] rho = -0.189553
+2023-12-08 21:46:58,395 INFO [default] #sv = 20308
+2023-12-08 21:47:04,029 INFO [default] working set size = 1024
+2023-12-08 21:47:04,030 INFO [default] training start
+2023-12-08 21:47:04,609 INFO [default] global iter = 0, total local iter = 734, diff = 2
+2023-12-08 21:47:34,312 INFO [default] global iter = 100, total local iter = 45502, diff = 0.00103235
+2023-12-08 21:47:34,603 INFO [default] global iter = 101, total local iter = 45502, diff = 0.000999532
+2023-12-08 21:47:34,604 INFO [default] training finished
+2023-12-08 21:47:34,604 INFO [default] obj = -5065.53
+2023-12-08 21:47:34,604 INFO [default] rho = -0.412627
+2023-12-08 21:47:34,604 INFO [default] #sv = 13726
+2023-12-08 21:47:37,832 INFO [default] working set size = 1024
+2023-12-08 21:47:37,833 INFO [default] training start
+2023-12-08 21:47:38,218 INFO [default] global iter = 0, total local iter = 729, diff = 2
+2023-12-08 21:47:50,496 INFO [default] global iter = 61, total local iter = 27084, diff = 0.000999299
+2023-12-08 21:47:50,496 INFO [default] training finished
+2023-12-08 21:47:50,496 INFO [default] obj = -1261.5
+2023-12-08 21:47:50,497 INFO [default] rho = -0.878959
+2023-12-08 21:47:50,497 INFO [default] #sv = 8992
+2023-12-08 21:47:57,344 INFO [default] working set size = 1024
+2023-12-08 21:47:57,346 INFO [default] training start
+2023-12-08 21:47:58,188 INFO [default] global iter = 0, total local iter = 615, diff = 2
+2023-12-08 21:48:43,669 INFO [default] global iter = 100, total local iter = 50864, diff = 0.0273984
+2023-12-08 21:49:05,387 INFO [default] global iter = 149, total local iter = 68997, diff = 0.000998837
+2023-12-08 21:49:05,387 INFO [default] training finished
+2023-12-08 21:49:05,387 INFO [default] obj = -8123.32
+2023-12-08 21:49:05,388 INFO [default] rho = -0.081323
+2023-12-08 21:49:05,388 INFO [default] #sv = 20438
+2023-12-08 21:49:10,803 INFO [default] working set size = 1024
+2023-12-08 21:49:10,804 INFO [default] training start
+2023-12-08 21:49:11,376 INFO [default] global iter = 0, total local iter = 645, diff = 2
+2023-12-08 21:49:43,514 INFO [default] global iter = 100, total local iter = 48588, diff = 0.00208077
+2023-12-08 21:49:45,326 INFO [default] global iter = 106, total local iter = 49472, diff = 0.000998178
+2023-12-08 21:49:45,326 INFO [default] training finished
+2023-12-08 21:49:45,326 INFO [default] obj = -5228.58
+2023-12-08 21:49:45,327 INFO [default] rho = -0.327842
+2023-12-08 21:49:45,327 INFO [default] #sv = 13896
+2023-12-08 21:49:48,548 INFO [default] working set size = 1024
+2023-12-08 21:49:48,549 INFO [default] training start
+2023-12-08 21:49:48,954 INFO [default] global iter = 0, total local iter = 665, diff = 2
+2023-12-08 21:50:02,478 INFO [default] global iter = 59, total local iter = 26968, diff = 0.000999941
+2023-12-08 21:50:02,478 INFO [default] training finished
+2023-12-08 21:50:02,478 INFO [default] obj = -1238.17
+2023-12-08 21:50:02,479 INFO [default] rho = -0.829117
+2023-12-08 21:50:02,479 INFO [default] #sv = 8650
+2023-12-08 21:50:08,718 INFO [default] working set size = 1024
+2023-12-08 21:50:08,720 INFO [default] training start
+2023-12-08 21:50:09,441 INFO [default] global iter = 0, total local iter = 667, diff = 2
+2023-12-08 21:50:47,484 INFO [default] global iter = 100, total local iter = 49113, diff = 0.0056562
+2023-12-08 21:50:54,643 INFO [default] global iter = 119, total local iter = 53964, diff = 0.000999809
+2023-12-08 21:50:54,643 INFO [default] training finished
+2023-12-08 21:50:54,643 INFO [default] obj = -5418.35
+2023-12-08 21:50:54,643 INFO [default] rho = -0.251572
+2023-12-08 21:50:54,643 INFO [default] #sv = 16606
+2023-12-08 21:50:59,807 INFO [default] working set size = 1024
+2023-12-08 21:50:59,809 INFO [default] training start
+2023-12-08 21:51:00,367 INFO [default] global iter = 0, total local iter = 693, diff = 2
+2023-12-08 21:51:20,070 INFO [default] global iter = 69, total local iter = 30774, diff = 0.000999261
+2023-12-08 21:51:20,070 INFO [default] training finished
+2023-12-08 21:51:20,070 INFO [default] obj = -1246.9
+2023-12-08 21:51:20,070 INFO [default] rho = -0.83078
+2023-12-08 21:51:20,070 INFO [default] #sv = 10583
+2023-12-08 21:51:22,626 INFO [default] working set size = 1024
+2023-12-08 21:51:22,627 INFO [default] training start
+2023-12-08 21:51:22,947 INFO [default] global iter = 0, total local iter = 646, diff = 2
+2023-12-08 21:51:29,528 INFO [default] global iter = 40, total local iter = 17716, diff = 0.000997656
+2023-12-08 21:51:29,528 INFO [default] training finished
+2023-12-08 21:51:29,528 INFO [default] obj = -1112.46
+2023-12-08 21:51:29,529 INFO [default] rho = -0.706525
+2023-12-08 21:51:29,529 INFO [default] #sv = 5601
+2023-12-08 21:51:33,489 INFO [default] #total unique sv = 51201
+2023-12-08 21:52:27,066 INFO [default] #classes = 7
+2023-12-08 21:52:32,041 INFO [default] working set size = 1024
+2023-12-08 21:52:32,044 INFO [default] training start
+2023-12-08 21:52:32,726 INFO [default] global iter = 0, total local iter = 579, diff = 2
+2023-12-08 21:53:05,652 INFO [default] global iter = 100, total local iter = 48121, diff = 0.00157159
+2023-12-08 21:53:06,545 INFO [default] global iter = 103, total local iter = 48447, diff = 0.000999979
+2023-12-08 21:53:06,545 INFO [default] training finished
+2023-12-08 21:53:06,545 INFO [default] obj = -6664.5
+2023-12-08 21:53:06,546 INFO [default] rho = 0.222569
+2023-12-08 21:53:06,546 INFO [default] #sv = 14391
+2023-12-08 21:53:11,732 INFO [default] working set size = 1024
+2023-12-08 21:53:11,733 INFO [default] training start
+2023-12-08 21:53:12,349 INFO [default] global iter = 0, total local iter = 577, diff = 2
+2023-12-08 21:53:44,829 INFO [default] global iter = 100, total local iter = 49879, diff = 0.00526895
+2023-12-08 21:53:50,310 INFO [default] global iter = 117, total local iter = 53968, diff = 0.000999472
+2023-12-08 21:53:50,310 INFO [default] training finished
+2023-12-08 21:53:50,310 INFO [default] obj = -7352.37
+2023-12-08 21:53:50,311 INFO [default] rho = 0.375602
+2023-12-08 21:53:50,311 INFO [default] #sv = 15727
+2023-12-08 21:53:55,874 INFO [default] working set size = 1024
+2023-12-08 21:53:55,875 INFO [default] training start
+2023-12-08 21:53:56,503 INFO [default] global iter = 0, total local iter = 668, diff = 2
+2023-12-08 21:54:31,651 INFO [default] global iter = 100, total local iter = 51186, diff = 0.00479883
+2023-12-08 21:54:38,310 INFO [default] global iter = 117, total local iter = 55343, diff = 0.000998509
+2023-12-08 21:54:38,310 INFO [default] training finished
+2023-12-08 21:54:38,310 INFO [default] obj = -7101.43
+2023-12-08 21:54:38,311 INFO [default] rho = 0.214632
+2023-12-08 21:54:38,311 INFO [default] #sv = 15852
+2023-12-08 21:54:45,104 INFO [default] working set size = 1024
+2023-12-08 21:54:45,105 INFO [default] training start
+2023-12-08 21:54:46,033 INFO [default] global iter = 0, total local iter = 625, diff = 2
+2023-12-08 21:55:34,589 INFO [default] global iter = 100, total local iter = 50422, diff = 0.0151467
+2023-12-08 21:55:53,100 INFO [default] global iter = 138, total local iter = 63249, diff = 0.000999494
+2023-12-08 21:55:53,100 INFO [default] training finished
+2023-12-08 21:55:53,100 INFO [default] obj = -7311.2
+2023-12-08 21:55:53,101 INFO [default] rho = 0.137987
+2023-12-08 21:55:53,101 INFO [default] #sv = 18747
+2023-12-08 21:55:57,874 INFO [default] working set size = 1024
+2023-12-08 21:55:57,875 INFO [default] training start
+2023-12-08 21:55:58,482 INFO [default] global iter = 0, total local iter = 678, diff = 2
+2023-12-08 21:56:27,335 INFO [default] global iter = 90, total local iter = 41262, diff = 0.000999616
+2023-12-08 21:56:27,335 INFO [default] training finished
+2023-12-08 21:56:27,335 INFO [default] obj = -4785.54
+2023-12-08 21:56:27,335 INFO [default] rho = -0.121758
+2023-12-08 21:56:27,335 INFO [default] #sv = 12202
+2023-12-08 21:56:30,054 INFO [default] working set size = 1024
+2023-12-08 21:56:30,055 INFO [default] training start
+2023-12-08 21:56:30,454 INFO [default] global iter = 0, total local iter = 658, diff = 2
+2023-12-08 21:56:41,740 INFO [default] global iter = 55, total local iter = 24810, diff = 0.00099733
+2023-12-08 21:56:41,740 INFO [default] training finished
+2023-12-08 21:56:41,740 INFO [default] obj = -1268.25
+2023-12-08 21:56:41,740 INFO [default] rho = -0.774379
+2023-12-08 21:56:41,740 INFO [default] #sv = 7661
+2023-12-08 21:56:47,233 INFO [default] working set size = 1024
+2023-12-08 21:56:47,234 INFO [default] training start
+2023-12-08 21:56:47,977 INFO [default] global iter = 0, total local iter = 613, diff = 2
+2023-12-08 21:57:27,210 INFO [default] global iter = 100, total local iter = 50562, diff = 0.00491119
+2023-12-08 21:57:34,182 INFO [default] global iter = 118, total local iter = 55096, diff = 0.000999228
+2023-12-08 21:57:34,182 INFO [default] training finished
+2023-12-08 21:57:34,182 INFO [default] obj = -7441.82
+2023-12-08 21:57:34,183 INFO [default] rho = 0.130976
+2023-12-08 21:57:34,183 INFO [default] #sv = 15935
+2023-12-08 21:57:39,658 INFO [default] working set size = 1024
+2023-12-08 21:57:39,659 INFO [default] training start
+2023-12-08 21:57:40,411 INFO [default] global iter = 0, total local iter = 663, diff = 2
+2023-12-08 21:58:20,328 INFO [default] global iter = 100, total local iter = 51779, diff = 0.00565975
+2023-12-08 21:58:28,284 INFO [default] global iter = 120, total local iter = 56964, diff = 0.000998671
+2023-12-08 21:58:28,284 INFO [default] training finished
+2023-12-08 21:58:28,284 INFO [default] obj = -7124.25
+2023-12-08 21:58:28,284 INFO [default] rho = -0.0191423
+2023-12-08 21:58:28,284 INFO [default] #sv = 16134
+2023-12-08 21:58:35,000 INFO [default] working set size = 1024
+2023-12-08 21:58:35,001 INFO [default] training start
+2023-12-08 21:58:35,935 INFO [default] global iter = 0, total local iter = 627, diff = 2
+2023-12-08 21:59:24,769 INFO [default] global iter = 100, total local iter = 51208, diff = 0.0161942
+2023-12-08 21:59:44,022 INFO [default] global iter = 140, total local iter = 65375, diff = 0.000999402
+2023-12-08 21:59:44,022 INFO [default] training finished
+2023-12-08 21:59:44,022 INFO [default] obj = -7275.3
+2023-12-08 21:59:44,022 INFO [default] rho = -0.0807511
+2023-12-08 21:59:44,023 INFO [default] #sv = 19130
+2023-12-08 21:59:49,202 INFO [default] working set size = 1024
+2023-12-08 21:59:49,203 INFO [default] training start
+2023-12-08 21:59:49,719 INFO [default] global iter = 0, total local iter = 649, diff = 2
+2023-12-08 22:00:16,828 INFO [default] global iter = 99, total local iter = 46614, diff = 0.000998486
+2023-12-08 22:00:16,828 INFO [default] training finished
+2023-12-08 22:00:16,828 INFO [default] obj = -5524.68
+2023-12-08 22:00:16,828 INFO [default] rho = -0.299678
+2023-12-08 22:00:16,829 INFO [default] #sv = 12812
+2023-12-08 22:00:19,664 INFO [default] working set size = 1024
+2023-12-08 22:00:19,665 INFO [default] training start
+2023-12-08 22:00:20,076 INFO [default] global iter = 0, total local iter = 660, diff = 2
+2023-12-08 22:00:31,545 INFO [default] global iter = 54, total local iter = 24178, diff = 0.000999598
+2023-12-08 22:00:31,545 INFO [default] training finished
+2023-12-08 22:00:31,545 INFO [default] obj = -1263.02
+2023-12-08 22:00:31,546 INFO [default] rho = -0.8288
+2023-12-08 22:00:31,546 INFO [default] #sv = 7748
+2023-12-08 22:00:37,612 INFO [default] working set size = 1024
+2023-12-08 22:00:37,613 INFO [default] training start
+2023-12-08 22:00:38,439 INFO [default] global iter = 0, total local iter = 735, diff = 2
+2023-12-08 22:01:21,443 INFO [default] global iter = 100, total local iter = 51834, diff = 0.00851531
+2023-12-08 22:01:32,582 INFO [default] global iter = 126, total local iter = 59733, diff = 0.000999387
+2023-12-08 22:01:32,582 INFO [default] training finished
+2023-12-08 22:01:32,582 INFO [default] obj = -8115.57
+2023-12-08 22:01:32,583 INFO [default] rho = -0.158337
+2023-12-08 22:01:32,583 INFO [default] #sv = 17489
+2023-12-08 22:01:39,768 INFO [default] working set size = 1024
+2023-12-08 22:01:39,769 INFO [default] training start
+2023-12-08 22:01:40,762 INFO [default] global iter = 0, total local iter = 684, diff = 2
+2023-12-08 22:02:33,054 INFO [default] global iter = 100, total local iter = 50271, diff = 0.0243906
+2023-12-08 22:02:56,474 INFO [default] global iter = 145, total local iter = 66162, diff = 0.000999502
+2023-12-08 22:02:56,474 INFO [default] training finished
+2023-12-08 22:02:56,474 INFO [default] obj = -8146.65
+2023-12-08 22:02:56,475 INFO [default] rho = -0.206872
+2023-12-08 22:02:56,475 INFO [default] #sv = 20344
+2023-12-08 22:03:02,033 INFO [default] working set size = 1024
+2023-12-08 22:03:02,034 INFO [default] training start
+2023-12-08 22:03:02,703 INFO [default] global iter = 0, total local iter = 734, diff = 2
+2023-12-08 22:03:37,986 INFO [default] global iter = 100, total local iter = 45542, diff = 0.00101176
+2023-12-08 22:03:38,326 INFO [default] global iter = 101, total local iter = 45542, diff = 0.000999353
+2023-12-08 22:03:38,326 INFO [default] training finished
+2023-12-08 22:03:38,326 INFO [default] obj = -5055.26
+2023-12-08 22:03:38,327 INFO [default] rho = -0.425737
+2023-12-08 22:03:38,327 INFO [default] #sv = 13709
+2023-12-08 22:03:41,500 INFO [default] working set size = 1024
+2023-12-08 22:03:41,531 INFO [default] training start
+2023-12-08 22:03:41,981 INFO [default] global iter = 0, total local iter = 704, diff = 2
+2023-12-08 22:03:56,542 INFO [default] global iter = 61, total local iter = 27091, diff = 0.000999374
+2023-12-08 22:03:56,542 INFO [default] training finished
+2023-12-08 22:03:56,542 INFO [default] obj = -1263.1
+2023-12-08 22:03:56,542 INFO [default] rho = -0.867672
+2023-12-08 22:03:56,542 INFO [default] #sv = 8984
+2023-12-08 22:04:03,845 INFO [default] working set size = 1024
+2023-12-08 22:04:03,846 INFO [default] training start
+2023-12-08 22:04:04,885 INFO [default] global iter = 0, total local iter = 605, diff = 2
+2023-12-08 22:04:57,539 INFO [default] global iter = 100, total local iter = 50970, diff = 0.0313707
+2023-12-08 22:05:23,722 INFO [default] global iter = 150, total local iter = 69241, diff = 0.000998578
+2023-12-08 22:05:23,722 INFO [default] training finished
+2023-12-08 22:05:23,722 INFO [default] obj = -8169.7
+2023-12-08 22:05:23,723 INFO [default] rho = -0.0763846
+2023-12-08 22:05:23,723 INFO [default] #sv = 20477
+2023-12-08 22:05:29,299 INFO [default] working set size = 1024
+2023-12-08 22:05:29,300 INFO [default] training start
+2023-12-08 22:05:29,986 INFO [default] global iter = 0, total local iter = 628, diff = 2
+2023-12-08 22:06:05,884 INFO [default] global iter = 100, total local iter = 48698, diff = 0.00204469
+2023-12-08 22:06:08,016 INFO [default] global iter = 106, total local iter = 49719, diff = 0.000999389
+2023-12-08 22:06:08,016 INFO [default] training finished
+2023-12-08 22:06:08,016 INFO [default] obj = -5248.33
+2023-12-08 22:06:08,017 INFO [default] rho = -0.309916
+2023-12-08 22:06:08,017 INFO [default] #sv = 13910
+2023-12-08 22:06:11,103 INFO [default] working set size = 1024
+2023-12-08 22:06:11,104 INFO [default] training start
+2023-12-08 22:06:11,581 INFO [default] global iter = 0, total local iter = 646, diff = 2
+2023-12-08 22:06:25,964 INFO [default] global iter = 59, total local iter = 27220, diff = 0.000998836
+2023-12-08 22:06:25,964 INFO [default] training finished
+2023-12-08 22:06:25,964 INFO [default] obj = -1238.89
+2023-12-08 22:06:25,964 INFO [default] rho = -0.815871
+2023-12-08 22:06:25,964 INFO [default] #sv = 8593
+2023-12-08 22:06:32,019 INFO [default] working set size = 1024
+2023-12-08 22:06:32,021 INFO [default] training start
+2023-12-08 22:06:32,884 INFO [default] global iter = 0, total local iter = 656, diff = 2
+2023-12-08 22:07:17,701 INFO [default] global iter = 100, total local iter = 48763, diff = 0.00542964
+2023-12-08 22:07:26,611 INFO [default] global iter = 120, total local iter = 53956, diff = 0.000998509
+2023-12-08 22:07:26,611 INFO [default] training finished
+2023-12-08 22:07:26,611 INFO [default] obj = -5454.17
+2023-12-08 22:07:26,612 INFO [default] rho = -0.254082
+2023-12-08 22:07:26,612 INFO [default] #sv = 16659
+2023-12-08 22:07:31,524 INFO [default] working set size = 1024
+2023-12-08 22:07:31,525 INFO [default] training start
+2023-12-08 22:07:32,159 INFO [default] global iter = 0, total local iter = 674, diff = 2
+2023-12-08 22:07:54,930 INFO [default] global iter = 68, total local iter = 29706, diff = 0.000998404
+2023-12-08 22:07:54,930 INFO [default] training finished
+2023-12-08 22:07:54,930 INFO [default] obj = -1247.07
+2023-12-08 22:07:54,931 INFO [default] rho = -0.812055
+2023-12-08 22:07:54,931 INFO [default] #sv = 10456
+2023-12-08 22:07:57,379 INFO [default] working set size = 1024
+2023-12-08 22:07:57,380 INFO [default] training start
+2023-12-08 22:07:57,718 INFO [default] global iter = 0, total local iter = 645, diff = 2
+2023-12-08 22:08:04,455 INFO [default] global iter = 40, total local iter = 17511, diff = 0.000999408
+2023-12-08 22:08:04,455 INFO [default] training finished
+2023-12-08 22:08:04,455 INFO [default] obj = -1115.23
+2023-12-08 22:08:04,456 INFO [default] rho = -0.694421
+2023-12-08 22:08:04,456 INFO [default] #sv = 5585
+2023-12-08 22:08:08,593 INFO [default] #total unique sv = 51194
+Line search fails in two-class probability estimates
+Line search fails in two-class probability estimates
+Line search fails in two-class probability estimates
+2023-12-08 22:08:58,158 INFO [default] training finished
+training is done.
+2023-12-08 22:09:16,683 INFO [default] #instances = 3589, #features = 11664
+2023-12-08 22:09:41,076 INFO [default] predict with probability
+0.5494566731680134

@@ -1,0 +1,46 @@
+Namespace(C=5.0, device='gpu', gamma=0.05, gpu_id=4, kernel='rbf', method='hog', nComponents=1296, path='./data/fer2013/augmented.csv', pca=False)
+start loading data
+(11664,)
+(11664,)
+161475 11664
+3589 11664
+loading data done
+Using GPU
+2023-12-08 19:07:06,291 INFO [default] #instances = 161475, #features = 11664
+2023-12-08 19:07:16,761 INFO [default] #classes = 7
+2023-12-08 19:07:33,347 INFO [default] working set size = 1024
+2023-12-08 19:07:33,348 INFO [default] training start
+2023-12-08 19:07:36,307 INFO [default] global iter = 0, total local iter = 577, diff = 2
+2023-12-08 19:09:04,596 INFO [default] global iter = 100, total local iter = 52036, diff = 0.86937
+2023-12-08 19:10:34,174 INFO [default] global iter = 200, total local iter = 100276, diff = 0.0515774
+2023-12-08 19:12:03,694 INFO [default] global iter = 300, total local iter = 143413, diff = 0.00265594
+2023-12-08 19:12:26,030 INFO [default] global iter = 325, total local iter = 149135, diff = 0.000999193
+2023-12-08 19:12:26,030 INFO [default] training finished
+2023-12-08 19:12:26,030 INFO [default] obj = -21130.2
+2023-12-08 19:12:26,031 INFO [default] rho = 0.270093
+2023-12-08 19:12:26,032 INFO [default] #sv = 45202
+2023-12-08 19:12:48,744 INFO [default] working set size = 1024
+2023-12-08 19:12:48,745 INFO [default] training start
+2023-12-08 19:12:50,616 INFO [default] global iter = 0, total local iter = 580, diff = 2
+2023-12-08 19:14:27,714 INFO [default] global iter = 100, total local iter = 52929, diff = 1.1474
+2023-12-08 19:16:04,873 INFO [default] global iter = 200, total local iter = 100191, diff = 0.0983821
+2023-12-08 19:17:42,050 INFO [default] global iter = 300, total local iter = 147366, diff = 0.00699086
+2023-12-08 19:18:45,950 INFO [default] global iter = 366, total local iter = 166733, diff = 0.000999705
+2023-12-08 19:18:45,950 INFO [default] training finished
+2023-12-08 19:18:45,950 INFO [default] obj = -23074.7
+2023-12-08 19:18:45,951 INFO [default] rho = 0.467563
+2023-12-08 19:18:45,951 INFO [default] #sv = 49295
+2023-12-08 19:19:02,769 INFO [default] working set size = 1024
+2023-12-08 19:19:02,771 INFO [default] training start
+2023-12-08 19:19:04,675 INFO [default] global iter = 0, total local iter = 554, diff = 2
+2023-12-08 19:20:43,338 INFO [default] global iter = 100, total local iter = 52952, diff = 1.22066
+2023-12-08 19:22:22,051 INFO [default] global iter = 200, total local iter = 102434, diff = 0.102027
+2023-12-08 19:24:00,795 INFO [default] global iter = 300, total local iter = 151447, diff = 0.00750611
+2023-12-08 19:25:06,757 INFO [default] global iter = 367, total local iter = 171327, diff = 0.000999465
+2023-12-08 19:25:06,757 INFO [default] training finished
+2023-12-08 19:25:06,757 INFO [default] obj = -22429.5
+2023-12-08 19:25:06,758 INFO [default] rho = 0.244968
+2023-12-08 19:25:06,758 INFO [default] #sv = 49927
+2023-12-08 19:25:29,098 INFO [default] working set size = 1024
+2023-12-08 19:25:29,100 INFO [default] training start
+2023-12-08 19:25:31,477 INFO [default] global iter = 0, total local iter = 555, diff = 2

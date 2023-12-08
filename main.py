@@ -79,7 +79,7 @@ def main(args):
     face.fit(train_x, train_y)
     print("training is done.")
     print(face.score(test_x, test_y))
-    print(face.predict(test_x))
+    # print(face.predict(test_x))
 
 
 if '__main__' == __name__:
