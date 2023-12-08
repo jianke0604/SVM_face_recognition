@@ -1,3 +1,5 @@
+import cv2
+import numpy as np
 import torch
 import pandas as pd
 import argparse
@@ -6,6 +8,7 @@ from model.hog import get_hog_features
 from model.resnet import ResNet
 from dataset import prepare_data
 from sklearn.decomposition import PCA
+from face_align import align_data
 
 
 def main(args):
@@ -23,6 +26,8 @@ def main(args):
     print("start loading data")
     data = pd.read_csv(path)
     train_x, train_y, test_x, test_y = prepare_data(data)
+
+
     if method == "cnn":  # cnn
         train_x = torch.tensor(train_x / 255.0).view(-1, 1, 48, 48).to(torch.float32).to(device)
         test_x = torch.tensor(test_x / 255.0).view(-1, 1, 48, 48).to(torch.float32).to(device)
@@ -58,6 +63,16 @@ def main(args):
             test_x = pca.transform(test_x)
             # test_x = pca.fit_transform(test_x)
             # train_x = pca.transform(train_x)
+    elif method == "alignment":
+        train_length = 1000
+        test_length = 100
+        train_x = train_x[:train_length]
+        test_x = test_x[:train_length]
+        train_y = train_y[:test_length]
+        test_y = test_y[:test_length]
+        train_x = align_data(train_x)
+        test_x = align_data(test_x)
+
 
     print("loading data done")
     
