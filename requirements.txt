@@ -5,3 +5,5 @@ numpy
 scikit-learn
 scikit-image
 opencv-python
+keras
+Pillow
