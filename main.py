@@ -9,6 +9,7 @@ from sklearn.decomposition import PCA
 
 
 def main(args):
+    print(args)
     if torch.cuda.is_available() and args.device == "gpu":
         from thundersvm import SVC
         device = "cuda"
@@ -47,14 +48,16 @@ def main(args):
     elif method == "hog":
         train_x = get_hog_features(train_x)
         test_x = get_hog_features(test_x)
-        # print(len(train_x), len(train_x[0]))  # 32298 900
-        # print(len(test_x), len(test_x[0]))    # 3589 900
+        print(len(train_x), len(train_x[0]))  # 32298 900
+        print(len(test_x), len(test_x[0]))    # 3589 900
         # print(train_x.shape, train_x.device, type(train_x))
         # print(test_x.shape, test_x.device, type(test_x))
-    if pca:
-        pca = PCA(n_components=args.nComponents)
-        train_x = pca.fit_transform(train_x)
-        test_x = pca.fit_transform(test_x)
+        if pca:
+            pca = PCA(n_components=args.nComponents)
+            train_x = pca.fit_transform(train_x)
+            test_x = pca.transform(test_x)
+            # test_x = pca.fit_transform(test_x)
+            # train_x = pca.transform(train_x)
 
     print("loading data done")
     
@@ -76,19 +79,20 @@ def main(args):
     face.fit(train_x, train_y)
     print("training is done.")
     print(face.score(test_x, test_y))
+    print(face.predict(test_x))
 
 
 if '__main__' == __name__:
     parser = argparse.ArgumentParser(description='Description of your script')
-    parser.add_argument('-p', '--path', default='./data/fer2013/fer2013.csv', help='Path to the dataset (default: ./data/fer2013/fer2013.csv)')
+    parser.add_argument('-p', '--path', default='./data/fer2013/augmented.csv', help='Path to the dataset (default: ./data/fer2013/fer2013.csv)')
     parser.add_argument('--method', default='cnn', help='Method to extract features (default: "cnn")')
     parser.add_argument('--kernel', default='rbf', help='Kernel type (default: rbf)')
-    parser.add_argument('--gamma', default=0.01, help='Kernel coefficient (default: 0.01)')
-    parser.add_argument('--C', default=1.0, help='Penalty parameter C of the error term (default: 1.0)')
+    parser.add_argument('--gamma', type=float, default=0.01, help='Kernel coefficient (default: 0.01)')
+    parser.add_argument('--C', type=float, default=1.0, help='Penalty parameter C of the error term (default: 1.0)')
     parser.add_argument('--device', default='gpu', help='Device to use (default: gpu)')
     parser.add_argument('--gpu_id', type=int, default=0, help='Specify the GPU id (default: 0)')
     parser.add_argument('--pca', default=False)
-    parser.add_argument('--nComponents', default=100, help='Specify the feature number of PCA')
+    parser.add_argument('--nComponents', default=1296, help='Specify the feature number of PCA')
 
     args = parser.parse_args()
     main(args)
