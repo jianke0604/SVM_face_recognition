@@ -1,0 +1,15 @@
+Namespace(C=5.0, device='gpu', gamma=0.05, gpu_id=4, kernel='rbf', method='hog', nComponents=1296, path='./data/fer2013/augmented.csv', pca=False)
+start loading data
+(11664,)
+(11664,)
+161475 11664
+3589 11664
+loading data done
+Using GPU
+2023-12-08 15:15:24,943 INFO [default] #instances = 161475, #features = 11664
+2023-12-08 15:15:37,684 INFO [default] #classes = 7
+2023-12-08 15:15:53,514 INFO [default] working set size = 1024
+2023-12-08 15:15:53,516 INFO [default] training start
+2023-12-08 15:15:57,663 INFO [default] global iter = 0, total local iter = 577, diff = 2
+2023-12-08 15:17:25,929 INFO [default] global iter = 100, total local iter = 52036, diff = 0.86937
+2023-12-08 15:18:55,579 INFO [default] global iter = 200, total local iter = 100276, diff = 0.0515774
