@@ -7,3 +7,5 @@ scikit-image
 opencv-python
 keras
 Pillow
+face_alignment
+tqdm

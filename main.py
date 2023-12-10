@@ -64,12 +64,6 @@ def main(args):
             # test_x = pca.fit_transform(test_x)
             # train_x = pca.transform(train_x)
     elif method == "alignment":
-        train_length = 1000
-        test_length = 100
-        train_x = train_x[:train_length]
-        test_x = test_x[:train_length]
-        train_y = train_y[:test_length]
-        test_y = test_y[:test_length]
         train_x = align_data(train_x)
         test_x = align_data(test_x)
 
@@ -94,12 +88,13 @@ def main(args):
     face.fit(train_x, train_y)
     print("training is done.")
     print(face.score(test_x, test_y))
-    # print(face.predict(test_x))
+    print(face.predict(test_x).shape)
+    print(face.predict(test_x)[:100])
 
 
 if '__main__' == __name__:
     parser = argparse.ArgumentParser(description='Description of your script')
-    parser.add_argument('-p', '--path', default='./data/fer2013/augmented.csv', help='Path to the dataset (default: ./data/fer2013/fer2013.csv)')
+    parser.add_argument('-p', '--path', default='./data/fer2013/fer2013.csv', help='Path to the dataset (default: ./data/fer2013/fer2013.csv)')
     parser.add_argument('--method', default='cnn', help='Method to extract features (default: "cnn")')
     parser.add_argument('--kernel', default='rbf', help='Kernel type (default: rbf)')
     parser.add_argument('--gamma', type=float, default=0.01, help='Kernel coefficient (default: 0.01)')
