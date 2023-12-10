@@ -22,10 +22,11 @@ def main(args):
     method = args.method
     path = args.path
     pca = args.pca
+    test_aug = args.text_aug
 
     print("start loading data")
     data = pd.read_csv(path)
-    train_x, train_y, test_x, test_y = prepare_data(data)
+    train_x, train_y, test_x, test_y = prepare_data(data, test_aug)
 
 
     if method == "cnn":  # cnn
@@ -108,6 +109,7 @@ if '__main__' == __name__:
     parser.add_argument('--gpu_id', type=int, default=0, help='Specify the GPU id (default: 0)')
     parser.add_argument('--pca', default=False)
     parser.add_argument('--nComponents', default=1296, help='Specify the feature number of PCA')
+    parser.add_argument('--text_aug', default=True, help='Choose whether to use text augmentation (default: True)')
 
     args = parser.parse_args()
     main(args)
