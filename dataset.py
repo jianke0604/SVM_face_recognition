@@ -19,7 +19,7 @@ class RandomApplyWithProb:
 interpolation = transforms.InterpolationMode.BILINEAR
 
 
-def prepare_data(data):
+def prepare_data(data, test_aug):
     data = data.groupby("Usage")
     train_x = pd.concat([data.get_group("Training"), data.get_group("PrivateTest")])
     train_y = np.array(train_x["emotion"])
