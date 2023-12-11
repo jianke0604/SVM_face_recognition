@@ -3,13 +3,14 @@ import numpy as np
 import torch
 import pandas as pd
 import argparse
+import joblib
 
 from model.hog import get_hog_features
 from model.resnet import ResNet
 from dataset import prepare_data
 from sklearn.decomposition import PCA
 from face_align import align_data
-
+from dataset import concat_and_replace
 
 def main(args):
     print(args)
@@ -22,10 +23,11 @@ def main(args):
     method = args.method
     path = args.path
     pca = args.pca
+    test_aug = args.test_aug
 
     print("start loading data")
     data = pd.read_csv(path)
-    train_x, train_y, test_x, test_y = prepare_data(data)
+    train_x, train_y, test_x, test_y = prepare_data(data, test_aug)
 
 
     if method == "cnn":  # cnn
@@ -51,10 +53,19 @@ def main(args):
         # print(train_x.shape)  # torch.Size([32298, 512])
         # print(test_x.shape)   # torch.Size([3589, 512])
     elif method == "hog":
-        train_x = get_hog_features(train_x)
-        test_x = get_hog_features(test_x)
-        print(len(train_x), len(train_x[0]))  # 32298 900
-        print(len(test_x), len(test_x[0]))    # 3589 900
+        if test_aug:
+            train_x = get_hog_features(train_x)
+            test_x0 = get_hog_features(test_x[0])
+            print(len(test_x0), len(test_x0[0]))  # 32298 900
+            test_x1 = get_hog_features(test_x[1])
+            test_x2 = get_hog_features(test_x[2])
+            test_x3 = get_hog_features(test_x[3])
+            test_x4 = get_hog_features(test_x[4])
+        else:
+            train_x = get_hog_features(train_x)
+            test_x = get_hog_features(test_x)
+            print(len(train_x), len(train_x[0]))  # 32298 900
+            print(len(test_x), len(test_x[0]))    # 3589 900
         # print(train_x.shape, train_x.device, type(train_x))
         # print(test_x.shape, test_x.device, type(test_x))
         if pca:
@@ -84,12 +95,20 @@ def main(args):
             decision_function_shape='ovr', probability=True,
             random_state=42, gpu_id=args.gpu_id, verbose=1
         )
+        # joblib.dump(face, './ckpt/svm_model.joblib')
 
     face.fit(train_x, train_y)
     print("training is done.")
-    print(face.score(test_x, test_y))
-    print(face.predict(test_x).shape)
-    print(face.predict(test_x)[:100])
+    # print(face.score(test_x, test_y))
+    target0 = face.predict(test_x0)
+    target1 = face.predict(test_x1)
+    target2 = face.predict(test_x2)
+    target3 = face.predict(test_x3)
+    target4 = face.predict(test_x4)
+    # predict = np.argmax(target0 + target1 + target2 + target3 + target4, axis=1)
+    predict = concat_and_replace(target0, target1, target2, target3, target4)
+    acc = np.mean(predict == test_y)
+    print("accuracy: ", acc)
 
 
 if '__main__' == __name__:
@@ -103,6 +122,7 @@ if '__main__' == __name__:
     parser.add_argument('--gpu_id', type=int, default=0, help='Specify the GPU id (default: 0)')
     parser.add_argument('--pca', default=False)
     parser.add_argument('--nComponents', default=1296, help='Specify the feature number of PCA')
+    parser.add_argument('--test_aug', type=bool, default=False, help='Choose whether to use test augmentation (default: True)')
 
     args = parser.parse_args()
     main(args)
