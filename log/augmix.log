@@ -1,0 +1,2 @@
+Namespace(C=5.0, device='gpu', gamma=0.02, gpu_id=4, kernel='rbf', method='hog', nComponents=1296, path='./data/fer2013/fer2013.csv', pca=False)
+start loading data

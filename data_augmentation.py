@@ -4,7 +4,7 @@ from PIL import Image
 import pandas as pd
 from keras.preprocessing.image import ImageDataGenerator
 
-def data_argumentation():
+def data_augmentation():
     datagen = ImageDataGenerator(
         rotation_range=30,
         width_shift_range=0.2,
@@ -61,4 +61,4 @@ def print_progress_bar(current, total):
     print(f"\r{progress_bar} {current}/{total}", end='')
 
 if __name__ == '__main__':
-    data_argumentation()
+    data_augmentation()
