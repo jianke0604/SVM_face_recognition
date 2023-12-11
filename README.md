@@ -51,4 +51,6 @@ python -u main.py --kernel rbf --method {your_method} --gpu_id {your_gpu_id} --C
 |   rbf   |     align      |  dim: 11664->136  | 44.10  |
 |   rbf   | hog |         aug, C=5, gamma=0.02         | todo |
 |    	rbf	|resnet18|aug, C=5, gamma=0.02|**68.04**|
+
+
 for more details, please see `./log` directory.
