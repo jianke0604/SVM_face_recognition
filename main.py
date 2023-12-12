@@ -27,29 +27,24 @@ def main(args):
     data = pd.read_csv(path)
     train_x, train_y, test_x, test_y = read_data(data)
 
-
     if method == "cnn":  # cnn
         train_x = torch.tensor(train_x / 255.0).view(-1, 1, 48, 48).to(torch.float32).to(device)
         test_x = torch.tensor(test_x / 255.0).view(-1, 1, 48, 48).to(torch.float32).to(device)
-        print(train_x.shape)  # torch.Size([32298, 1, 48, 48])
-        print(test_x.shape)   # torch.Size([3589, 1, 48, 48])
+        # print(train_x.shape)  # torch.Size([32298, 1, 48, 48])
+        # print(test_x.shape)   # torch.Size([3589, 1, 48, 48])
         model = ResNet().to(device)
-        state_dict = torch.load("resnet_pretrained/epoch19.pth", map_location=device)
-        state_dict = {k: v for k, v in state_dict.items() if k != "backbone.fc.weight" and k != "backbone.fc.bias"}
+        state_dict = torch.load("resnet_pretrained.pth", map_location=device)
         model.load_state_dict(state_dict)
         model.eval()
         with torch.no_grad():
-            # train_x_list = torch.split(train_x, train_x.shape[0] / 4 + 1, dim=0)
-            # output = []
-            # for x in train_x_list:
-            #     output.append(model(x).detach().cpu())
-            # train_x = torch.cat(output, dim=0)
-            train_x = model(train_x).detach().cpu().tolist()
-            test_x = model(test_x).detach().cpu().tolist()
-        # print(len(train_x), len(train_x[0]))  # 32298 512
-        # print(len(test_x), len(test_x[0]))    # 3589 512
-        # print(train_x.shape)  # torch.Size([32298, 512])
-        # print(test_x.shape)   # torch.Size([3589, 512])
+            # train_x = model(train_x).detach().cpu()
+            train_x_list = torch.split(train_x, train_x.shape[0] // 4 + 1, dim=0)
+            output = []
+            for x in train_x_list:
+                output.append(model(x).detach().cpu())
+            train_x = torch.cat(output, dim=0)
+
+            test_x = model(test_x).detach().cpu()
     elif method == "hog":
         train_x = get_hog_features(train_x)
         test_x = get_hog_features(test_x)
