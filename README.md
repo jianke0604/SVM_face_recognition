@@ -43,14 +43,15 @@ python -u main.py --kernel rbf --method {your_method} --gpu_id {your_gpu_id} --C
 | :-----: | :------------: | :---------------: | :----: |
 | sigmoid |       /        |         /         | 24.97  |
 |   rbf   |       /        |         /         | 30.90  |
-| linear  |       /        |         /         | 未收敛 |
+| linear  |       /        |         /         | not converged |
 | linear  |      hog       |    patch(8,2)     | 45.31  |
 |   rbf   |      hog       |    patch(8,2)     | 45.90  |
 |   rbf   |      hog       |    patch(4,4)     | 51.46  |
 |   rbf   |    hog+pca     |    patch(4,4)     | 51.52  |
 |   rbf   |     align      |  dim: 11664->136  | 44.10  |
-|   rbf   | hog |         aug, C=5, gamma=0.02         | todo |
-|    	rbf	|resnet18|aug, C=5, gamma=0.02|**68.04**|
+|   rbf   | hog |         C=5, gamma=0.02         | 57.65 |
+|   rbf   | hog+aug |         C=5, gamma=0.02         | **59.07** |
+|    	rbf	|resnet18+aug|C=5, gamma=0.02|**68.04**|
 
 
 for more details, please see `./log` directory.

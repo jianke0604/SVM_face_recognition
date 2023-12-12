@@ -6,7 +6,7 @@ import argparse
 
 from model.hog import get_hog_features
 from model.resnet import ResNet
-from dataset import prepare_data
+from read_data import read_data
 from sklearn.decomposition import PCA
 from face_align import align_data
 
@@ -22,11 +22,10 @@ def main(args):
     method = args.method
     path = args.path
     pca = args.pca
-    test_aug = args.test_aug
 
     print("start loading data")
     data = pd.read_csv(path)
-    train_x, train_y, test_x, test_y = prepare_data(data, test_aug)
+    train_x, train_y, test_x, test_y = read_data(data)
 
 
     if method == "cnn":  # cnn
@@ -104,7 +103,6 @@ if '__main__' == __name__:
     parser.add_argument('--gpu_id', type=int, default=0, help='Specify the GPU id (default: 0)')
     parser.add_argument('--pca', default=False)
     parser.add_argument('--nComponents', default=1296, help='Specify the feature number of PCA')
-    parser.add_argument('--test_aug', default=True, help='Choose whether to use test augmentation (default: True)')
 
     args = parser.parse_args()
     main(args)
