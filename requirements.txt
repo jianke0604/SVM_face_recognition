@@ -15,4 +15,5 @@ torch
 torchaudio
 torchvision
 tqdm
-
+matplotlib
+torchmetrics
